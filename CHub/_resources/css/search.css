@@ -1,0 +1,18 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************ search styles (all browsers) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-26 16:31:35 +0100 (Di, 26 Jan 2010) $ *****/
+@import url('core/initial.css');
+@import url('core/grid.css');
+@import url('core/navigation.css');
+@import url('core/content.css');
+@import url('core/sifr.css');
+
+@import url('module/breadcrumb-mouseover/breadcrumb-mouseover.css');
+@import url('module/example/example.css');
+
+@import url('module/search/grid.css');
+@import url('module/search/content.css');

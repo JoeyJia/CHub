@@ -1,0 +1,107 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/********************************************* CTC styles 13px/18px*****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+
+div.ctc caption,
+div.ctc dl,
+div.ctc h3,
+div.ctc h4,
+div.ctc h5,
+div.ctc li,
+div.ctc p,
+div.ctc td,
+div.ctc th,
+div.ctc ul,
+div.ctc div.contact-block h1,
+div.ctc div.contact-block h2,
+div.ctc div.contact-block h3
+{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+div.ctc p.caption,
+div.ctc div.std-table p.table-footer
+{
+	font-size: 12px;
+	line-height: 15px;
+}
+
+div.ctc div.left-content ul.bullet-list li
+{
+	background-position: 1px 9px;
+	line-height: 18px;
+}
+
+html.safari.mac div.ctc div.left-content ul.bullet-list li
+{
+	background-position: 1px 8px;
+}
+
+div.ctc a.link,
+html.win.webkit div.ctc a.link
+{
+	background-position: 0 7px !important;
+}
+
+div.ctc div.right-content ul.link-list a,
+html.win.webkit div.ctc div.right-content ul.link-list a
+{
+	background-position: 0 7px;
+}
+
+div.ctc ul.toc-list a
+{
+	background-position: 0 8px;
+}
+
+div.ctc a.email
+{
+	background-position: 0 4px;
+}
+
+div.ctc a.doc,
+div.ctc a.file,
+div.ctc a.gif,
+div.ctc a.htm,
+div.ctc a.image,
+div.ctc a.jpg,
+div.ctc a.movie,
+div.ctc a.pdf,
+div.ctc a.ppt,
+div.ctc a.sound,
+div.ctc a.tif,
+div.ctc a.xls,
+div.ctc a.zip
+{
+	background-position: 0 1px;
+}
+
+div.ctc a span.icon
+{
+	background-position: 5px 6px;
+}
+
+html.mac div.ctc a span.icon
+{
+	background-position: 5px 5px;
+}
+
+html.mac div.ctc a.email
+{
+	background-position: 0 3px;
+}
+	
+html.mac.webkit div.ctc a.link
+{
+	background-position: 0 6px !important;
+}
+
+html.mac.webkit div.ctc div.right-content ul.link-list a
+{
+	background-position: 0 6px;
+}

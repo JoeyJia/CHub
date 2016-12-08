@@ -1,0 +1,83 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/*************************************** core styles (Mac OS only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-02-03 16:02:43 +0100 (Mi, 03 Feb 2010) $ *****/
+/***********************************************************************/
+
+input#site-search-input
+{
+	padding: 1px 4px;
+	height: 12px;
+}
+
+html.firefox a.search-button
+{
+	padding: 0 6px 0 5px;
+}
+
+button.generic
+{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+div.select-button-bar a.generic-button
+{
+	margin-top: 1px;
+}
+
+html.firefox div.select-button-bar a.generic-button
+{
+	margin-right: -1px;
+}
+
+.contact-block .team-list a.link
+{
+	background-position: 0 4px !important;
+}
+
+a.link,
+ul#language-list a,
+ul#language-list span.active
+{
+	background-position: 0 3px !important;
+}
+
+.single-link a.link
+{
+	background-position: 0 5px !important;
+}
+
+a span.icon
+{
+	background-position: 5px 3px;
+}
+
+a.email
+{
+	background-position: 0 1px;
+}
+
+html.firefox.sIFR-hasFlash div.link-list ul.link li
+{
+	font-size: 12px;
+}
+
+/************************************************************************/
+/*START: site id layer*/
+
+ul.countries li a.c,
+ul.countries li.active span.c,
+ul.countries li a.worldwide,
+ul.countries li.active span.worldwide,
+ul.countries li a.mobile,
+ul.countries li.active span.mobile
+{
+	padding-top: 1px;
+}
+
+/*END: site id layer*/
+/************************************************************************/

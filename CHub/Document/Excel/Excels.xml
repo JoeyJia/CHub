@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sheets>
+  <sheet filename="test.xml">
+    <Viewable cols="A:D"/>
+    <Allow/>
+  </sheet>
+</sheets>

@@ -1,0 +1,18 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/***************************** module search: styles (Safari only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-18 16:23:28 +0100 (Mo, 18 Jan 2010) $ *****/
+
+div.gui-select ul.has-scrollbar li a
+{
+	width: 243px; /* to match thicker focus outline */
+}
+
+div.gui-select
+{
+	-khtml-user-select: none;	/* prevent selecting select box when double clicking on scrollbar */
+}
+

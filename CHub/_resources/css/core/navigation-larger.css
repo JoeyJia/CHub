@@ -1,0 +1,57 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/*************************************** navigation styles larger *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+/***********************************************************************/
+
+/*START: breadcrumb*/
+dl#breadcrumb dt
+{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+dl#breadcrumb dd
+{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+dl#breadcrumb a,
+dl#breadcrumb span
+{
+	background-position: 0 7px !important;
+}
+
+/*END: breadcrumb*/
+/************************************************************************/
+/*START: breadcrumb mouseover*/
+dl#breadcrumb dd li
+{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+dl#breadcrumb dd li a,
+dl#breadcrumb dd li span
+{
+	background-position: 10px 7px !important;
+}
+
+/*END: breadcrumb mouseover*/
+/************************************************************************/
+
+html.webkit.mac dl#breadcrumb a,
+html.webkit.mac dl#breadcrumb span
+{
+	background-position: 0 6px !important;
+}
+	
+html.webkit.mac dl#breadcrumb dd li a,
+html.webkit.mac dl#breadcrumb dd li span
+{
+	background-position: 10px 6px !important;
+}

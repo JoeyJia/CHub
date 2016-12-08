@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHub", "CHub\CHub.csproj", "{7CDFD8CB-BBDB-448B-AE16-5BD8366C14BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdioSoft.ClassCommon", "IdioSoft.ClassCommon\IdioSoft.ClassCommon.csproj", "{AFEEA59A-EA97-4A1C-88C7-2416D7EEE07A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdioSoft.ClassDbAccess", "IdioSoft.ClassDbAccess\IdioSoft.ClassDbAccess.csproj", "{726A1117-739F-4394-AD8B-04460E6C4DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdioSoft.CustomPageEx", "IdioSoft.CustomPageEx\IdioSoft.CustomPageEx.csproj", "{88A30EDB-6872-4757-943D-5226ACD8CB19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdioSoft.DateTimePicker", "IdioSoft.DateTimePicker\IdioSoft.DateTimePicker.csproj", "{4B95FB97-4D88-4686-A018-B6E497963E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdioSoft.ExportExcel", "IdioSoft.ExportExcel\IdioSoft.ExportExcel.csproj", "{7AF3D127-8B23-4482-92C0-CDEDA76B2642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdioSoft.Public", "IdioSoft.Public\IdioSoft.Public.csproj", "{AE3067EC-3C3E-4319-8049-71F52AFBB755}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CDFD8CB-BBDB-448B-AE16-5BD8366C14BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDFD8CB-BBDB-448B-AE16-5BD8366C14BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDFD8CB-BBDB-448B-AE16-5BD8366C14BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDFD8CB-BBDB-448B-AE16-5BD8366C14BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEEA59A-EA97-4A1C-88C7-2416D7EEE07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEEA59A-EA97-4A1C-88C7-2416D7EEE07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEEA59A-EA97-4A1C-88C7-2416D7EEE07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEEA59A-EA97-4A1C-88C7-2416D7EEE07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726A1117-739F-4394-AD8B-04460E6C4DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726A1117-739F-4394-AD8B-04460E6C4DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726A1117-739F-4394-AD8B-04460E6C4DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726A1117-739F-4394-AD8B-04460E6C4DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A30EDB-6872-4757-943D-5226ACD8CB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A30EDB-6872-4757-943D-5226ACD8CB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A30EDB-6872-4757-943D-5226ACD8CB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A30EDB-6872-4757-943D-5226ACD8CB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B95FB97-4D88-4686-A018-B6E497963E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B95FB97-4D88-4686-A018-B6E497963E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B95FB97-4D88-4686-A018-B6E497963E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B95FB97-4D88-4686-A018-B6E497963E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF3D127-8B23-4482-92C0-CDEDA76B2642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF3D127-8B23-4482-92C0-CDEDA76B2642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF3D127-8B23-4482-92C0-CDEDA76B2642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF3D127-8B23-4482-92C0-CDEDA76B2642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3067EC-3C3E-4319-8049-71F52AFBB755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3067EC-3C3E-4319-8049-71F52AFBB755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3067EC-3C3E-4319-8049-71F52AFBB755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3067EC-3C3E-4319-8049-71F52AFBB755}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

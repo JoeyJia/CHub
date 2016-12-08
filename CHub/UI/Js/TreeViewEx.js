@@ -1,0 +1,4 @@
+﻿function AutoSelectTreeNodeChecked(ele){if(ele.type=='checkbox'){AutoSelectParentNode(ele);var childrenDivID=ele.id.replace('CheckBox','Nodes');var div=document.getElementById(childrenDivID);if(div==null)return;var checkBoxs=div.getElementsByTagName('INPUT');for(var i=0;i<checkBoxs.length;i++){if(checkBoxs[i].type=='checkbox')
+checkBoxs[i].checked=ele.checked;}}}
+function AutoSelectParentNode(obj){if(obj.checked){try{var p=obj.parentNode.parentNode.parentNode.parentNode.parentNode;if(p){var pCheckNodeID=p.id.replace("Nodes","CheckBox");var checkNode=document.getElementById(pCheckNodeID);if(checkNode){checkNode.checked=true;AutoSelectParentNode(checkNode);}}}catch(ex){}}}
+function SetTreeNodeAutoSelectParentNodeHandle(treeID){var objs=document.getElementsByTagName("input");for(var i=0;i<objs.length;i++){if(objs[i].type=='checkbox'){var obj=objs[i];if(obj.id.indexOf(treeID)!=-1){objs[i].onclick=function(){AutoSelectTreeNodeChecked(this);};}}}}

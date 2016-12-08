@@ -1,0 +1,134 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/********************************************** initial stylesheet *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+
+html,
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+div, form
+{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+table
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-collapse: collapse;
+	font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd, caption, th, td, label
+{
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+ol
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+a
+{
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+	color: #333;
+	text-decoration: none;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+em
+{
+	font-style: normal;
+	font-weight: bold;
+	color: #666;
+}
+
+img, fieldset
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+input, select, textarea, button
+{
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+	color: #333;
+}
+
+select, textarea
+{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+button
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+
+form
+{
+	display: inline;
+}
+
+hr
+{
+	display: none;
+}
+
+.access,
+h6
+{
+	position: absolute;
+	left: -7000px;
+}
+
+.clearfix
+{
+	min-height: 1%;
+}
+
+* html .clearfix
+{
+	height: 1%;
+}
+
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+}

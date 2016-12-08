@@ -1,0 +1,131 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/********************************************* CTC styles 15px/20px*****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+
+div.ctc caption,
+div.ctc dl,
+div.ctc h3,
+div.ctc h4,
+div.ctc h5,
+div.ctc li,
+div.ctc p,
+div.ctc td,
+div.ctc th,
+div.ctc ul,
+div.ctc div.contact-block h1,
+div.ctc div.contact-block h2,
+div.ctc div.contact-block h3
+{
+	font-size: 15px;
+	line-height: 20px;
+}
+
+div.ctc p.caption,
+div.ctc div.std-table p.table-footer
+{
+	font-size: 14px;
+	line-height: 17px;
+}
+
+div.ctc div.left-content ul.bullet-list li
+{
+	background-position: 1px 11px;
+	line-height: 20px;
+}
+
+html.webkit div.ctc div.left-content ul.bullet-list li,
+html.firefox.mac div.ctc div.left-content ul.bullet-list li,
+html.firefox2 div.ctc div.left-content ul.bullet-list li
+{
+	background-position: 1px 10px;
+}
+
+div.ctc a.link
+{
+	background-position: 0 9px !important;
+}
+
+div.ctc div.right-content ul.link-list a
+{
+	background-position: 0 9px;
+}
+
+html.mac.firefox div.ctc a.link,
+html.firefox2 div.ctc a.link,
+html.webkit div.ctc a.link
+{
+	background-position: 0 8px !important;
+}
+
+html.mac.firefox div.ctc div.right-content ul.link-list a,
+html.firefox2 div.ctc div.right-content ul.link-list a,
+html.webkit div.ctc div.right-content ul.link-list a
+{
+	background-position: 0 8px !important;
+}
+
+div.ctc ul.toc-list a
+{
+	background-position: 0 10px;
+}
+
+div.ctc a.email
+{
+	background-position: 0 5px;
+}
+
+div.ctc a.doc,
+div.ctc a.file,
+div.ctc a.gif,
+div.ctc a.htm,
+div.ctc a.image,
+div.ctc a.jpg,
+div.ctc a.movie,
+div.ctc a.pdf,
+div.ctc a.ppt,
+div.ctc a.sound,
+div.ctc a.tif,
+div.ctc a.xls,
+div.ctc a.zip
+{
+	background-position: 0 2px;
+}
+
+html.ie div.ctc a.doc,
+html.ie div.ctc a.file,
+html.ie div.ctc a.gif,
+html.ie div.ctc a.htm,
+html.ie div.ctc a.image,
+html.ie div.ctc a.jpg,
+html.ie div.ctc a.movie,
+html.ie div.ctc a.pdf,
+html.ie div.ctc a.ppt,
+html.ie div.ctc a.sound,
+html.ie div.ctc a.tif,
+html.ie div.ctc a.xls,
+html.ie div.ctc a.zip,
+html.firefox.mac div.ctc a.doc,
+html.firefox.mac div.ctc a.file,
+html.firefox.mac div.ctc a.gif,
+html.firefox.mac div.ctc a.htm,
+html.firefox.mac div.ctc a.image,
+html.firefox.mac div.ctc a.jpg,
+html.firefox.mac div.ctc a.movie,
+html.firefox.mac div.ctc a.pdf,
+html.firefox.mac div.ctc a.ppt,
+html.firefox.mac div.ctc a.sound,
+html.firefox.mac div.ctc a.tif,
+html.firefox.mac div.ctc a.xls,
+html.firefox.mac div.ctc a.zip
+{
+	background-position: 0 1px;
+}
+
+div.ctc a span.icon
+{
+	background-position: 5px 7px;
+}

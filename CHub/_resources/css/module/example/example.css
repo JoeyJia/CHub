@@ -1,0 +1,126 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************************** example styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2008-12-18 19:26:53 +0100 (Do, 18 Dez 2008) $ *****/
+/***********************************************************************/
+
+/* definitions for example service layer */
+
+div#toolbar-layer-service
+{
+	left: 43px;
+	width: 930px;
+}
+
+div#toolbar-layer-service div.toolbar-content
+{
+	height: 230px; /* just a dummy height */
+}
+
+/* definitions for example contact layer */
+
+div#toolbar-layer-contact
+{
+	left: 354px;
+	width: 385px;
+}
+
+div#toolbar-layer-contact a,
+div#toolbar-layer-contact h3,
+div#toolbar-layer-contact h4,
+div#toolbar-layer-contact p
+{
+	font-size: 11px;
+	line-height: 16px;
+}
+
+div#toolbar-layer-contact ul.link-list
+{
+	font-size: 11px;
+	line-height: 14px;
+}
+
+div#toolbar-layer-contact ul.link-list li
+{
+	line-height: 16px;
+	padding: 0 0 2px;
+}
+
+div#toolbar-layer-contact ul.link-list a
+{
+	line-height: 14px;
+	display: block;
+	display: inline-block;
+}
+
+div#toolbar-layer-contact h3
+{
+	color: #333;
+	font-weight: bold;
+}
+
+div#toolbar-layer-contact h4
+{
+	color: #666;
+	font-weight: bold;
+}
+
+div#toolbar-layer-contact a
+{
+	color: #900;
+}
+
+div#toolbar-layer-contact a:hover
+{
+	text-decoration: underline;
+}
+
+div#toolbar-layer-contact a.link,
+div#toolbar-layer-contact a.email
+{
+	color: #333;
+}
+
+div#toolbar-layer-contact a.link:hover,
+div#toolbar-layer-contact a.email:hover
+{
+	color: #900;
+	text-decoration: none;
+}
+
+div#toolbar-layer-contact p.top-spacer
+{
+	padding: 5px 0 0;
+}
+
+div#toolbar-layer-contact div.toolbar-content
+{
+	padding: 0 0 10px 10px;
+}
+
+div#toolbar-layer-contact div.main-block
+{
+	padding: 20px 0 14px;
+	width: 355px;
+}
+
+div#toolbar-layer-contact div.main-block h4
+{
+	padding: 8px 0 0;
+}
+
+div#toolbar-layer-contact div.main-block img
+{
+	float: left;
+	margin: 4px 12px 0 0;
+}
+
+div#toolbar-layer-contact div.additional-block
+{
+	background: url(img/dotted-separator.gif) repeat-x 0 0;
+	padding: 11px 117px 10px 0;
+	width: 248px;
+}

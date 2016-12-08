@@ -1,0 +1,30 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/**************************************** example styles (IE only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2007-11-09 21:47:08 +0100 (Fri, 09 Nov 2007) $ *****/
+
+* html div#toolbar-layer-service
+{
+	width: 934px;
+	w\idth: 930px;
+}
+
+* html div#toolbar-layer-contact div.main-block
+{
+	float: left !important;
+}
+
+* html div#toolbar-layer-contact div.additional-block
+{
+	clear: left;
+	width: 365px;
+	w\idth: 248px;
+}
+
+* html div#toolbar-layer-contact ul.link-list li a
+{
+	line-height: 16px;
+}

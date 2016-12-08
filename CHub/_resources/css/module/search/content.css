@@ -1,0 +1,661 @@
+/***************************** Cummins' new web appearance layout *****/
+/***************************** Copyright (c) 2007-2010 Cummins AG *****/
+/**********************************************************************/
+/****************************************** module search: styles *****/
+/**********************************************************************/
+/************************************* author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-18 16:53:40 +0100 (Mo, 18 Jan 2010) $ ****/
+/**********************************************************************/
+/* START: common */
+
+/* font definitions */
+
+dd, dt, h1, h2, h3, li, p, select
+{
+	font-size: 11px;
+	line-height: 16px;
+}
+
+/* element definitions */
+
+ul.bullet
+{
+	margin-bottom: -2px;
+}
+
+ul.bullet li
+{
+	line-height: 14px;
+	background: url(img/bullet.gif) 0 7px no-repeat;
+	padding: 1px 0 3px 9px;
+}
+
+/* END: common */
+/***********************************************************************/
+/* START: help link */
+
+p.help
+{
+	float: right;
+	margin: 12px 0 0;
+}
+
+p.help a
+{
+	background: url(img/icon-help.gif) no-repeat;
+	color: #666;
+	display: block;
+	padding: 0 0 0 18px;
+}
+
+p.help a:hover
+{
+	color: #900;
+}
+
+/* END: help link */
+/***********************************************************************/
+/* START: search form (including help link) */
+
+div.search-query
+{
+	float: left;
+	padding: 10px 0;
+	position: relative;
+	width: 500px;
+	z-index: 4;
+}
+
+div.search-query input#query
+{
+	border: 1px solid #999;
+	display: block;
+	float: left;
+	font-size: 11px;
+	height: 14px; /* only for Safari 3 WIN */
+	padding: 0 5px;
+	width: 398px;
+}
+
+div.search-query button.generic,
+div.search-query a.generic-button
+{
+	margin-left: 4px;
+	display: block;
+	float: left;
+}
+
+/* END: search form */
+/***********************************************************************/
+/* START: result header */
+
+div.search-header
+{
+	background: url(img/bg_dotted.gif) repeat-x left bottom;
+	margin: 0 0 6px;
+	padding: 0 0 3px;
+}
+
+div.search-header h2,
+div.recommendation h2
+{
+	font-weight: bold;
+	color: #666;
+}
+
+div.search-header h2
+{
+	float: left;
+}
+
+div.search-header h2 span
+{
+	font-weight: normal;
+}
+
+/* END: result header */
+/***********************************************************************/
+/* START: paginator */
+
+div.search-results div.search-pagination
+{
+	float: right;
+}
+
+div.search-pagination dd
+{
+	float: left;
+}
+
+div.search-pagination dd,
+div.search-pagination dd a
+{
+	color: #666;
+}
+
+div.search-pagination dd a:hover
+{
+	text-decoration: none;
+	color: #900;
+}
+
+div.search-pagination dd strong
+{
+	color: #900;
+}
+
+div.search-pagination dd.previous a,
+div.search-pagination dd.previous span,
+div.search-pagination dd.next a,
+div.search-pagination dd.next span
+{
+	display: block;
+	height: 16px;
+	padding: 0 7px 0 11px;
+}
+
+div.search-pagination dd.previous a:hover,
+div.search-pagination dd.next a:hover
+{
+	color: #900;
+}
+
+div.search-pagination dd.next a,
+div.search-pagination dd.next span
+{
+	padding: 0 10px 0 7px;
+}
+
+div.search-pagination dd.previous a
+{
+	background: url(img/icons-paging.gif) 0 5px no-repeat;
+}
+
+div.search-pagination dd.previous span
+{
+	background: url(img/icons-paging.gif) 0 -11px no-repeat;
+	color: #999;
+}
+
+div.search-pagination dd.next a
+{
+	background: url(img/icons-paging.gif) right -27px no-repeat;
+}
+
+div.search-pagination dd.next span
+{
+	background: url(img/icons-paging.gif) right -43px no-repeat;
+	color: #999;
+}
+
+/* END: paginator */
+/***********************************************************************/
+/* START: suggestion "did you mean" */
+
+div.search-suggestion
+{
+	padding: 4px 0 12px;
+}
+
+div.search-suggestion dl.suggestion dt,
+div.search-suggestion dl.suggestion dd
+{
+	float: left;
+}
+
+div.search-suggestion dl.suggestion dd a
+{
+	font-weight: bold;
+	margin-left: 4px;
+}
+
+div.search-suggestion dl.suggestion dd a:hover
+{
+	color: #900;
+	text-decoration: underline;
+}
+
+
+/* END: suggestion */
+/***********************************************************************/
+/* START: recommendation */
+
+div.recommendations
+{
+	background: #eee;
+	margin: 0 0 6px;
+	padding: 0 0 0 8px;
+}
+
+div.recommendations h3
+{
+	padding: 4px 0 2px;
+}
+
+div.search-suggestion + div.recommendations
+{
+	margin-top: -2px;
+}
+
+/* END: recommendation */
+/***********************************************************************/
+/* START: results */
+
+dl.result
+{
+	clear: both;
+	padding: 0 14px 4px 0;
+}
+
+dl.result dt
+{
+	padding: 16px 0 0;
+}
+
+dl.result dt.first-child
+{
+	padding: 4px 0 0;
+}
+
+dl.result dt a
+{
+	color: #900;
+}
+
+dl.result dt a:hover
+{
+	text-decoration: underline;
+}
+
+dl.result dd a
+{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	color: #666;
+	display: block;
+}
+
+dl.result dd a:hover
+{
+	color: #900;
+}
+
+/* END: results */
+/***********************************************************************/
+/* START: no result */
+
+div.no-result h3
+{
+	padding: 4px 0 16px;
+}
+
+/* END: no result */
+/***********************************************************************/
+/* START: search footer */
+
+div.search-footer
+{
+	background: url(img/bg_dotted.gif) repeat-x left top;
+	margin: 6px 0 0;
+	padding: 3px 0 0;
+}
+
+/* END: search footer */
+/***********************************************************************/
+/* START: filter > common */
+
+div#search-filter-zone
+{
+	background: url(img/bg_dotted.gif) repeat-x left top;
+}
+
+div.search-filter
+{
+	background: url(img/bg_dotted.gif) repeat-x left bottom;
+	padding: 11px 0 15px;
+}
+
+div.search-filter h3
+{
+	padding: 0 0 7px;
+}
+
+div.search-filter select
+{
+	float: left;
+	width: 237px;
+}
+
+div.search-filter fieldset.filter
+{
+	padding: 0 0 9px;
+}
+
+div.search-filter select.disabled
+{
+	color: #ccc;
+}
+
+div.search-filter button,
+div.search-filter a.generic-button
+{
+	float: right;
+}
+
+div.search-filter button.disabled
+{
+	background: #ccc;
+}
+
+div.search-filter fieldset.reset
+{
+	padding: 4px 0 0;
+}
+
+div.active-filter
+{
+	background: #eee;
+	margin: 0 0 10px;
+	padding: 1px 0 1px 7px;
+	position: relative;
+}
+
+div.active-filter span.change
+{
+	position: absolute;
+	right: 5px;
+	top: 1px;
+}
+
+/* END: filter > common */
+/***********************************************************************/
+/* START: filter > js */
+
+html.js div#search-filter-zone
+{
+	left: -7000px;
+	position: relative;
+}
+
+html.js div.search-filter fieldset.filter button,
+html.js div.search-filter fieldset.filter a.generic-button
+{
+	display: none;
+}
+
+
+html.js div.search-filter h3
+{
+	color: #666;
+	padding: 0 0 6px;
+}
+
+/* END: filter > js */
+/***********************************************************************/
+/* START: gui select */
+
+div.gui-select
+{
+	margin: 0 0 1px;
+	position: relative;
+	width: 276px;
+	z-index: 1;
+}
+
+div.active-gui-select
+{
+	z-index: 2;
+}
+
+div.gui-select p.title
+{
+	height: 18px;
+	overflow: hidden;
+	width: 276px; /* div.gui-select */
+}
+
+div.gui-select p.title a,
+div.gui-select p.title span.a
+{
+	background: #fff url(img/gui-select-handle.gif) no-repeat 261px 7px;
+	border: 1px solid #999;
+	display: block;
+	color: #666;
+	height: 16px; /* p.title - 2px */
+	padding: 0 15px 0 6px;
+	white-space: nowrap;
+	width: 253px; /* div.gui-select - 23px */
+}
+
+div.gui-select p.title span.a
+{
+	background-image: url(img/gui-select-handle-inactive.gif);
+	border-color: #ccc;
+	color: #ccc;
+	cursor: default;
+}
+
+div.gui-select div.content
+{
+	background: #fff;
+	border: 1px solid #999;
+	border-top: none;
+	left: -7000px;
+	max-height: 189px;
+	overflow: hidden;
+	position: absolute;
+	top: 18px;
+	width: 274px;
+	z-index: 1;
+}
+
+div.gui-select div.active-content
+{
+	left: 0;
+}
+
+div.gui-select ul
+{
+	overflow: hidden;
+	padding: 5px 2px 4px;
+	position: relative;
+	width: 270px;
+}
+
+div.gui-select ul.has-scrollbar
+{
+	padding-bottom: 5px;
+	width: 255px;
+}
+
+div.gui-select li
+{
+	padding: 0 0 2px;
+}
+
+div.gui-select li.first-child
+{
+	background: url(img/gui-select-hr.gif) no-repeat right bottom;
+	margin: 0 0 4px;
+	padding: 1px 0 5px;
+}
+
+div.gui-select ul.has-scrollbar li.first-child
+{
+	background-position: left bottom;
+}
+
+div.gui-select li span.value
+{
+	display: none;
+}
+
+div.gui-select li a
+{
+	display: block;
+	padding: 0 5px;
+	width: 260px;
+}
+
+
+div.gui-select li a:focus
+{
+	outline: 1px dotted #900;
+}
+
+div.gui-select ul.has-scrollbar li a
+{
+	width: 244px;
+}
+
+div.gui-select li.selected a,
+div.gui-select li.active a
+{
+	color: #900;
+}
+
+div.gui-select li span.no
+{
+	color: #999;
+}
+
+div.gui-select div.slider-wrapper
+{
+	border: 1px solid #fff;
+	height: 184px;
+	left: 257px;
+	position: absolute;
+	top: 0;
+	width: 15px;
+	z-index: 5000;
+}
+
+div.gui-select div.arrow-up,
+div.gui-select div.arrow-down,
+div.gui-select div.handle,
+div.gui-select div.slider
+{
+	background-color: #999;
+	background-repeat: no-repeat;
+	background-position: 3px 5px;
+	height: 15px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 15px;
+}
+
+div.gui-select div.arrow-up
+{
+	background-image: url(img/gui-select-arrow-up.gif);
+}
+
+div.gui-select div.arrow-down
+{
+	background-image: url(img/gui-select-arrow-down.gif);
+	top: 172px;
+}
+
+div.gui-select div.slider
+{
+	background: #ccc;
+	height: 155px;
+	top: 16px;
+}
+
+div.gui-select div.handle
+{
+	height: 0; /* set by js */
+}
+
+/* END: gui select */
+/***********************************************************************/
+/* START: autocomplete */
+
+div.autocomplete-wrapper
+{
+	background: #fff;
+	border: 1px solid #999;
+	display: none;
+	left: 0;
+	padding: 2px 6px 4px;
+	position: absolute;
+	top: 25px;
+	width: 396px;
+	z-index: 1000;
+}
+
+div.autocomplete-wrapper li a
+{
+	display: block;
+}
+
+div.autocomplete-wrapper li.selected a,
+div.autocomplete-wrapper li.active a
+{
+	color: #900;
+}
+
+/* END: autocomplete */
+/***********************************************************************/
+/* START: help */
+
+
+div#context-layer-help
+{
+	width: 596px;
+	margin: 4px 0 0 0;
+}
+
+body.help div.search-help
+{
+	margin: -2px 0 0;
+	padding: 0 0 0 44px;
+}
+
+div.search-help div.layer-content
+{
+	padding: 20px 14px 10px 14px;
+}
+
+div.search-help h1
+{
+	font-weight: bold;
+	padding: 0 0 6px;
+}
+
+div.search-help h2
+{
+	background: url(img/bg_dotted.gif) repeat-x;
+	color: #666;
+	font-weight: bold;
+	margin: 10px 0 0;
+	padding: 11px 0 0;
+}
+
+div.search-help ul
+{
+	padding-top: 2px;
+}
+
+div.search-help div.spacer-8
+{
+	height: 8px;
+	overflow: hidden;
+}
+
+p#back
+{
+	background: url(img/bg_dotted.gif) repeat-x;
+	margin: 10px 0 0;
+	padding: 11px 0 0;
+}
+
+p#back a
+{
+	background-image: url(img/icon-backlink.gif);
+	display: block;
+}
+
+/* END: help */
+/***********************************************************************/

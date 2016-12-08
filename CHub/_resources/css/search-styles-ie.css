@@ -1,0 +1,11 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/***************************************** search styles (IE only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-26 16:31:35 +0100 (Di, 26 Jan 2010) $ *****/
+@import url('core/specific-ie.css');
+@import url('module/breadcrumb-mouseover/specific-ie.css');
+@import url('module/search/specific-ie.css');
+@import url('module/example/specific-ie.css');

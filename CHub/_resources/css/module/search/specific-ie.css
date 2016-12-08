@@ -1,0 +1,56 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/********************************* module search: styles (IE only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-26 16:31:35 +0100 (Di, 26 Jan 2010) $ *****/
+
+div.search-suggestion + div.recommendations
+{
+	margin-top: -3px; /* should be 2px */
+}
+
+div.recommendations h3
+{
+	padding: 5px 0 2px;
+}
+
+* html div.search-filter div.gui-select div.content
+{
+	height: 189px; /* min-height for IE6 */
+}
+
+* html div.gui-select ul
+{
+	zoom: 1; /* forces IE layout mode to get correct offsetTop values of the li-elements and solve background problems */
+}
+
+* html div.search-pagination dd.previous a,
+* html div.search-pagination dd.previous span,
+* html div.search-pagination dd.next a,
+* html div.search-pagination dd.next span
+{
+	display: inline-block;
+}
+
+dl.result dd a
+{
+	display: inline-block; /* improve display of background icons */
+}
+
+div.gui-select li
+{
+	float: left; /* avoid vertical padding in list items */
+}
+
+* html div#search-filter-zone
+{
+	z-index: 2; /* show filters in front of div.iframe-lining */
+}
+
+* html p.help a
+{
+	display: inline-block;
+}
+

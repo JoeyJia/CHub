@@ -1,0 +1,151 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/*********************************************** styles (printers) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-02-17 17:21:52 +0100 (Mi, 17 Feb 2010) $ *****/
+/***********************************************************************/
+/*START: general print styles*/
+body
+{
+	font-size: 75%;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd, caption, th, td, label, legend, a
+{
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+	color: #000;
+}
+
+a
+{
+	text-decoration: underline;
+}
+
+fieldset,
+img
+{
+	border: none;
+}
+
+caption, th
+{
+	text-align: left;
+}
+
+td, th
+{
+	padding-right: 1em;
+}
+
+.sIFR-flash,
+.sIFR-flash object,
+.sIFR-flash embed
+{
+	display: none !important;
+	height: 0;
+	width: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+span.sIFR-alternate
+{
+	visibility: visible !important;
+	display: block !important;
+	position: static !important;
+	left: auto !important;
+	top: auto !important;
+}
+/*END: general print styles*/
+/************************************************************************/
+
+div.separator a.to-top,
+div#simple-layer-share .close,
+div#simple-layer-share,
+div#generic-nav-zone,
+div#headervisual-zone,
+div#lightbox-curtain,
+div#multi-language-switch,
+div#pagetools-zone,
+div#pagetools-footer-zone,
+div#toolbar-zone,
+div#search-zone,
+div#site-explorer,
+div#site-id-layer,
+div.glossary-index,
+div.hidden-headertext-contents,
+div.lightbox-layer,
+div.select-button-bar,
+div.toolbar-layer,
+dl#breadcrumb dd div,
+dl#footer dd,
+dl#footer dt span.dash,
+dl#footer dt.global,
+dl#footer dt.mobile,
+h6,
+hr,
+p#back,
+p#language-switch,
+p#sitemap-link,
+p.access,
+a span.icon,
+div.feature-content object,
+div.feature-content embed
+{
+	display: none;
+}
+
+p#site-id
+{
+	width: 100% !important;
+	background: none !important;
+}
+
+p#site-id a
+{
+	background: none !important;
+}
+
+p#logo a,
+dl#breadcrumb a,
+p#site-id a,
+p.teaser-link a
+{
+	text-decoration: none;
+}
+
+div#footer-zone
+{
+	padding-top: 10mm;
+}
+
+/* ctc and additional grid */
+
+a.magnifier,
+div.mi-wrapper a
+{
+	display: none;
+}
+
+ul.toc-list a
+{
+	text-decoration: none;
+}
+
+div#simple-layer-share.active-layer
+{
+	border-top: 1px solid #000;
+	display: block;
+	margin-top: 5mm;
+	padding-top: 3mm;
+}
+
+
+p#logo img
+{
+	height: 3mm;
+	width: auto;
+}

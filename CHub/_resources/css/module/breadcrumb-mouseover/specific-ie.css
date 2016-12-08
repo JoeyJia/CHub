@@ -1,0 +1,24 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/*************************** breadcrumb mouseover styles (IE only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2007-11-09 21:47:08 +0100 (Fri, 09 Nov 2007) $ *****/
+
+dl#breadcrumb dd div
+{
+	background: url(img/blank.gif);
+}
+
+* html dl#breadcrumb dd div li a
+{
+	width: 113px;
+	float: none;
+}
+
+* html dl#breadcrumb dd li a,
+* html dl#breadcrumb dd li span
+{ /* for IE5.5, IE6 don't worry about it */
+	background: url(../../core/img/icon-link.gif) no-repeat;
+}

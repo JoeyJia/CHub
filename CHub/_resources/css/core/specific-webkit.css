@@ -1,0 +1,88 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************ content styles (Webkit only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+/***********************************************************************/
+/*START: grid*/
+
+input#site-search-input
+{
+	padding: 1px 4px;
+	height: 12px;
+}
+
+div#footer-zone
+{
+	padding-right: 20px; /*used as workaround for wider font rendering*/
+}
+
+body.page-type-content div#headertext-zone h1,
+body.page-type-content div#headertext-zone h2
+{
+	margin-top: 1px;
+}
+
+/*END: grid*/
+/************************************************************************/
+/*START: sifr*/
+
+.sIFR-hasFlash div.link-list ul.link li
+{
+	background-position: 0 5px;
+	padding: 1px 0 6px 11px;
+}
+
+div.link-list ul.link span.sifr
+{
+	display: block;
+}
+
+/*END: sifr*/
+/************************************************************************/
+/*START: optional break in links*/
+
+span.wbr /*hide zero width space for optional break*/
+{
+	width: 0;
+	visibility: hidden;
+	display: inline-block;
+	overflow: hidden;
+	height: 0;
+}
+
+/*END: optional break in links*/
+/************************************************************************/
+/*START: prevent line breaks in generic buttons*/
+
+a.generic-button span span
+{
+	white-space: nowrap;
+}
+
+/*END: prevent line breaks in generic buttons*/
+/************************************************************************/
+/*START: site id layer*/
+
+.safari3 ul.countries li a.c,
+.safari3 ul.countries li.active span.c,
+.safari3 ul.countries li a.worldwide,
+.safari3 ul.countries li.active span.worldwide,
+.safari4.mac ul.countries li a.c,
+.safari4.mac ul.countries li.active span.c,
+.safari4.mac ul.countries li a.worldwide,
+.safari4.mac ul.countries li.active span.worldwide
+{
+	padding-top: 1px;
+}
+
+.safari3 ul.countries li.active a.worldwide,
+.safari4.mac ul.countries li.active a.worldwide
+{
+	padding-bottom: 1px;
+}
+
+/*END: site id layer*/
+/************************************************************************/

@@ -1,0 +1,40 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/**************************************** ctc styles (Webkit only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+
+div.left-content div.sifr-h1
+{
+	padding: 2px 0 4px;
+}
+
+.sIFR-hasFlash div.left-content div.sifr-h1
+{
+	padding: 1px 0 5px;
+}
+
+/***********************************************************************/
+/* START: font-size/line-height adjustments */
+
+div.p div.image-wrapper p.caption
+{
+	padding: 7px 0 2px;
+}
+
+div.ctc div.block-image p.caption,
+div.ctc div.embedded-file p.caption
+{
+	padding: 4px 0 0;
+	margin-bottom: -1px;
+}
+
+div.ctc div.std-table p.table-footer
+{
+	padding: 3px 0 0 0;
+}
+
+/* END: font-size/line-height adjustments */
+/***********************************************************************/

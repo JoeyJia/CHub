@@ -1,0 +1,282 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="CHub.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <link rel="SHORTCUT ICON" href="_resources/img/Cummins.png"/>
+    <title>Cummins LD Products Configuration Tools</title>
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="copyright" content="Copyright Cummins AG - all rights reserved" />
+    <meta name="producer" content="virtual identity AG | http://www.virtual-identity.com" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="_resources/css/styles.css" />
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="./_resources/css/styles-ie.css" />
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" media="print" href="_resources/css/print.css" />
+    <link rel="Stylesheet" type="text/css" media="all" href="UI/CSS/Style.css" />
+    <link rel="contents" title="Sitemap" href="#sitemap-link" />
+
+    <script type="text/javascript">
+        var RESOURCES_PATH = "_resources/";
+        var headerVisualImages = {
+            "swap-1": "_assets/swap-1.jpg",
+            "swap-2": "_assets/swap-3.jpg",
+            "swap-3": "_assets/swap-4.jpg",
+            "swap-4": "_assets/swap-5.jpg",
+            "swap-5": "_assets/swap-7.jpg"
+        };
+    </script>
+
+    <script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+    <script type="text/javascript">
+        jQuery.noConflict();
+    </script>
+
+    <script type="text/javascript" src="_resources/js/lib/prototype.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/common.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/core.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/module.breadcrumb.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/module.header-visual.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/module.language-selector.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/module.magnifier.js"></script>
+
+    <script type="text/javascript" src="_resources/js/lib/module.lightbox-layer.js"></script>
+
+    <!-- START: DEV NOTE -->
+    <!-- If you do not wish to use all the scripts above (exclusive prototype.js) separately, you can use the compiled script instead -->
+    <!-- <script type="text/javascript" src="./_resources/js/compiled/script.js"></script> -->
+    <!-- END: DEV NOTE -->
+
+    <script type="text/javascript" src="_resources/js/init.js"></script>
+
+    <script type="text/javascript" src="_resources/js/example/siteexplorer-get-content.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        //Javascript错误处理
+        window.onerror = function handleErr() {
+            return true;
+        }
+    </script>
+
+    <script type="text/javascript">
+        document.title = "Cummins CHub Tools 1.0.0";
+    </script>
+
+</head>
+<body class="page-type-3">
+    <form id="Form1" name="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="180">
+        </asp:ScriptManager>
+        <p class="access">
+            <a href="#content-zone">Skip to Content</a>
+        </p>
+        <div id="footer-position-wrapper">
+            <p style="height:72px; background:url(_resources/img/bg-header.png) rgb(182, 16, 32)">
+                <a class="content-layer-2-trigger" href="http://www.cummins.com/" rel="lightbox-layer-logo"
+                    title="Go to the homepage">
+                    <img src="_resources/img/cummins-logo-print.gif" alt="cummins" height="50" width="55" style="margin-top:10px; margin-left:94px;"
+                         /></a>
+            </p>
+            <div id="header-zone" style="background:url(_resources/img/bg-header.png) rgb(182, 16, 32);display:none;">
+                <div id="headervisual-zone" >
+                    &nbsp;
+                </div>
+                <div id="fluid-zone">
+                    <div id="headertext-zone">
+                        <div class="headertext-content">
+                            <div class="sifr-header">
+                                <h2>LD BU</h2>
+                            </div>
+                            <div class="sifr-header">
+                                <h3>LD Products Configuration Tools</h3>
+                            </div>
+                        </div>
+                        <div class="hidden-headertext-contents">
+                            <p class="access">
+                                Content preview for [products &amp; solutions]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="toolbar-zone" class="clearfix">
+                <div id="generic-nav-zone" style="padding-left: 320px; display: none;">
+                    <hr />
+                    <p class="access">
+                        <a href="#search-zone">Skip over Generic Navigation</a>
+                    </p>
+                    <ul id="toolbar-nav" class="clearfix">
+                        <li><a href="javascript:void(0);" rel="jump-to-contact" style="background-image: url(_resources/img/tb-contact-en.gif); width: 72px;"><span class="access">Contact</span></a></li>
+                    </ul>
+                </div>
+                <div id="search-zone">
+                    <hr />
+                    <p class="access">
+                        <a href="#content-zone">Skip over Site Explorer</a>
+                    </p>
+                    <div id="site-explorer">
+                        <p id="sitemap-link">
+                            <a href="javascript:void(0);" style="background-image: url(_resources/img/tb-sitemap-en.gif); width: 99px;"><span class="access">Site Explorer</span></a>
+                        </p>
+                        <div id="site-explorer-layer">
+                            <div class="close">
+                                <a href="javascript:void(0);"><span class="access">Close Site Explorer</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-zone" class="clearfix">
+                <hr />
+                <div id="breadcrumb-zone">
+                    <dl id="breadcrumb" class="clearfix">
+                        <dt class="access">You are here:</dt>
+                        <dd id="ddHome" runat="server">
+                            <a href="HomePage.aspx" class="link">Home Page</a>
+                            <div id="divHome" runat="server">
+                                <ul>
+                                    <li id="liHome1" runat="server"><span class="active">Login User Management</span></li>
+                                    <li id="liHome7" runat="server"><a href="OrderDefault.aspx">SPR</a></li>
+                                    <li id="liHome8" runat="server"><a href="OptionsDefault.aspx">Motor Options Management</a></li>
+                                    <li id="liHome10" runat="server"><a href="DriveOptionsDefault.aspx">Drive Options Management</a></li>
+                                    <li id="liHome9" runat="server"><a href="KPOperation.aspx">Motor KP Discount</a></li>
+                                    <li id="liHome3" runat="server"><a href="javascript:void(0);">Motor Products Quotation(Copy/Paste)</a></li>
+                                    <li id="liHome2" runat="server"><a href="javascript:void(0);">Drive Products Quotation(Copy/Paste)</a></li>
+                                    <li id="liHome5" runat="server"><a href="MyInformation.aspx">My Information</a></li>
+                                    <li id="liHome6" runat="server"><a href="ExitSystem.aspx">Log Off</a></li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dd id="ddNavigationTwo" runat="server">
+                            <asp:HyperLink ID="hlnkNavigationTwo" runat="server" NavigateUrl="AccountDefault.aspx"
+                                CssClass="link active"></asp:HyperLink>
+                            <div id="divNavigationTwo" runat="server" style="display: none;">
+                                <ul>
+                                    <li id="liNavigationTwo1" runat="server"><a href="AccountOperation.aspx">Add New</a></li>
+                                    <li id="liNavigationTwo2" runat="server"><a href="AccountDefault.aspx">List</a></li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dd id="ddNavigationThree" runat="server">
+                            <a href="AccountDefault.aspx" class="link active">List</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="left-content">
+                    <div class="column" style="width: 994px;">
+                        <div class="teaser">
+                            <div class="sifr">
+                                <h3 id="h3Title" runat="server"></h3>
+                            </div>
+                            <div class="hruler">
+                            </div>
+                            <p>
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="column">
+                        <div class="teaser">
+                            <div class="sifr">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="toolbar-layer-contact" class="toolbar-layer">
+                <div class="toolbar-content clearfix">
+                    <div class="close">
+                        <a href="javascript:void(0);"><span class="access">Close Contact Layer</span></a>
+                    </div>
+                    <div class="main-block clearfix">
+                        <img src="_assets/contact-georg-mustermann.jpg" width="95" height="125" alt="Photo: Ms. Wang Yilin" />
+                        <h3>Ms. Sun HuiJie</h3>
+                        <p>
+                            &nbsp;
+                        </p>
+                        <h4>Organisation</h4>
+                        <p>
+                            SLC I DT LD
+                        </p>
+                    </div>
+                    <div class="additional-block">
+                        <h4>Contact</h4>
+                        <p>
+                            Industry Sector, Drive Technologies Division, Cummins Central Building,No.7, WangJing
+                        Zhonghuan Nanlu, Beijing 100102<br />
+                            P.R.China
+                        </p>
+                        <p class="top-spacer">
+                            Tel.: (..86)-10-6476 2035
+                        </p>
+                    </div>
+                    <div class="additional-block">
+                        <ul class="link-list">
+                            <li><a href="mailto:huijie.sun@Cummins.com" class="email">Sun, Hui Jie SLC I IA&amp;DT
+                            PEK</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-position-placeholder">
+                &nbsp;
+            </div>
+        </div>
+        <div id="footer-zone" style="z-index: -1;">
+            <div class="min-width">
+                <dl id="footer">
+                    <dt class="global"><a href="http://www.cummins.com" title="Go to www.cummins.com">Cummins.com
+                    Global Website</a><span class="pipe"> | </span></dt>
+                    <dt class="mobile"></dt>
+                    <dt>&copy; Cummins<span class="dash"> - </span></dt>
+                    <dd>
+                        <a href="javascript:void(0);">Corporate Information</a><span class="pipe"> | </span>
+                        <a href="javascript:void(0);">Privacy Policy</a><span class="pipe"> | </span><a href="javascript:void(0);">Terms of Use</a><span class="pipe"> | </span><a href="javascript:void(0);">Digital ID</a></dd>
+                </dl>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:Timer ID="Timer1" runat="server" Interval="120000" OnTick="Timer1_Tick" Enabled="false">
+                        </asp:Timer>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

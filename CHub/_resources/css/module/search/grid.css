@@ -1,0 +1,60 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************** module search: grid styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+/***********************************************************************/
+/*START: override optional breadcrumb*/
+
+div#breadcrumb-zone
+{
+	margin-bottom: -4px;
+	padding-bottom: 0;
+}
+
+body.help div#breadcrumb-zone
+{
+	margin-bottom: 0;
+}
+
+/*END: override optional breadcrumb*/
+/************************************************************************/
+/*START: search query and filter*/
+
+div.search-results
+{
+	margin-left: 44px;
+	width: 596px;
+}
+
+div#search-query-zone
+{
+	margin: 14px 0 4px 44px;
+	width: 596px;
+}
+
+div.left-content,
+div#context-zone
+{
+	margin-top: 18px;
+}
+
+/*END: search query and filter*/
+/************************************************************************/
+/*START: context zone*/
+
+div#context-zone
+{
+	float: left;
+	margin-left: 44px;
+	width: 276px;
+}
+
+div#search-filter-zone
+{
+	margin-top: 18px;
+}
+
+/*END: context zone*/

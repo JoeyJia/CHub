@@ -1,0 +1,56 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************* breadcrumb mouseover styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2007-11-09 21:47:08 +0100 (Fri, 09 Nov 2007) $ *****/
+
+dl#breadcrumb dd div
+{
+	border: solid #fff;
+	border-width: 1px 2px 2px 1px;
+	display: none;
+	left: -1px;
+	position: absolute;
+	top: 16px;
+	white-space: nowrap;
+	z-index: 1000;
+	min-width: 144px;
+}
+
+dl#breadcrumb dd:hover div,
+dl#breadcrumb dd.active div
+{
+	display: block;
+}
+
+dl#breadcrumb dd ul
+{
+	background: #eee;
+	border-top: 1px solid #999;
+	margin-top: 3px;
+}
+
+dl#breadcrumb dd li
+{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	line-height: 16px;
+	padding: 2px 0;
+	white-space: nowrap;
+}
+
+dl#breadcrumb dd li a,
+dl#breadcrumb dd li span
+{
+	background-position: 10px 5px !important;
+	display: block;
+	padding: 0 10px 0 21px;
+}
+
+dl#breadcrumb dd:hover a.active,
+dl#breadcrumb dd.active a.active
+{
+	text-decoration: underline;
+}

@@ -1,0 +1,659 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************************** content styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-02-11 11:55:08 +0100 (Do, 11 Feb 2010) $ *****/
+/***********************************************************************/
+/*START: generic definitions*/
+
+span.sub
+{
+	font-size: 10px;
+	line-height: 13px;
+	position: relative;
+	top: 3px;
+}
+
+span.sup
+{
+	font-size: 10px;
+	line-height: 13px;
+	position: relative;
+	top: -3px;
+}
+
+/*END: generic definitions*/
+/***********************************************************************/
+/*START: hide and show with js enabled */
+
+.no-js-hide
+{
+	display: none !important;
+}
+
+.no-js-show,
+.always-show
+{
+	display: block !important;
+}
+
+html.js .js-hide,
+html.js .no-js-show
+{
+	display: none !important;
+}
+
+html.js .js-show,
+html.js .no-js-hide
+{
+	display: block !important;
+}
+
+/*END: hide and show with js enabled */
+/***********************************************************************/
+/*START: buttons*/
+
+button.generic,
+button#site-search-button
+{
+	font-size: 11px;
+	line-height: 14px;
+	background: #999;
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 0 6px;
+	text-align: center;
+	overflow: visible;
+	width: auto;
+}
+
+button#site-search-button
+{
+	background: #666;
+}
+
+/*Firefox specific*/
+@-moz-document url-prefix()
+{
+	button.generic,
+	button#site-search-button
+	{
+		padding: 0 3px;
+	}
+}
+
+/*Safari3 specific*/
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	button.generic,
+	button#site-search-button
+	{
+		padding: 0 3px;
+	}
+
+	input#site-search-input
+	{
+		padding: 1px 4px;
+		height: 12px;
+	}
+}
+
+a.generic-button
+{
+	background: url(img/generic-button.gif) no-repeat top left;
+	display: block;
+	float: left;
+	padding: 0 0 0 1px;
+}
+
+a.generic-button:hover
+{
+	background-position: bottom left;
+}
+
+a.generic-button span
+{
+	background: url(img/generic-button.gif) no-repeat top right;
+	display: block;
+	float: left;
+	padding: 0 1px 0 0;
+}
+
+a.generic-button:hover span
+{
+	background-position: bottom right;
+}
+
+a.generic-button span span
+{
+	font-size: 11px;
+	line-height: 14px;
+	background-color: #999;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 1px 5px;
+	text-align: center;
+}
+
+a.generic-button:hover span span
+{
+	background-color: #666;
+}
+
+a.search-button
+{
+	font-size: 11px;
+	line-height: 14px;
+	background: #666;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	padding: 0 5px;
+	text-align: center;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #fff;
+}
+
+a.search-button:hover
+{
+	background: #900;
+}
+
+/* inactive and disabled buttons */
+button.inactive,
+a.inactive-generic-button span span,
+a.inactive-generic-button:hover span span
+{
+	background: #ccc;
+	color: #999;
+	cursor: default !important;
+}
+
+a.inactive-generic-button,
+a.inactive-generic-button:hover,
+a.inactive-generic-button span,
+a.inactive-generic-button:hover span
+{
+	background: url(img/generic-button.gif) repeat-x 0 -16px;
+	cursor: default !important;
+}
+
+/*END: buttons*/
+/***********************************************************************/
+/*START: header content*/
+
+div#headertext-zone h1,
+div#headertext-zone h2
+{
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0 0 10px 0;
+	margin-left: -1px;
+}
+
+body.page-type-content div#headertext-zone h1,
+body.page-type-content div#headertext-zone h2
+{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+div#headertext-zone h3
+{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #fff;
+	margin-left: -1px;
+}
+
+div#headertext-zone h3 a
+{
+	color: #fff;
+}
+
+div#headertext-zone h3 a:hover
+{
+	color: #900;
+}
+
+div#headertext-zone p
+{
+	font-size: 11px;
+	line-height: 16px;
+	color: #fff;
+}
+
+/*END: header content*/
+/***********************************************************************/
+/*START: links*/
+
+a.link
+{
+	padding: 0 0 0 11px;
+	background: url(img/icon-link.gif) 0 4px no-repeat;
+}
+
+a span.icon
+{
+	background: url(img/icon-link.gif) 5px 4px no-repeat;
+	padding: 0 0 0 7px;
+}
+
+a.link-ext
+{
+	padding: 0 0 0 13px !important;
+	background-image: url(img/icon-link-ext.gif) !important;
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+}
+
+a.link:hover,
+a.link-ext:hover
+{
+	color: #900;
+}
+
+a.print
+{
+	padding-left: 18px;
+	background: url(img/icon-print.gif) no-repeat;
+}
+
+a.email
+{
+	padding-left: 18px;
+	background: url(img/icon-email.gif) no-repeat 0 2px;
+}
+
+a.email:hover
+{
+	color: #900;
+	text-decoration: none;
+}
+/* download and search result links */
+/* see also: /module/ctc/ctc.css line: 80 */
+
+a.doc
+{
+	padding-left: 18px;
+	background: url(img/icon-doc.gif) no-repeat;
+}
+
+a.file
+{
+	padding-left: 15px;
+	background: url(img/icon-file.gif) no-repeat;
+}
+
+a.gif
+{
+	padding-left: 18px;
+	background: url(img/icon-gif.gif) no-repeat;
+}
+
+a.htm
+{
+	padding-left: 19px;
+	background: url(img/icon-htm.gif) no-repeat;
+}
+
+a.image
+{
+	padding-left: 18px;
+	background: url(img/icon-image.gif) no-repeat;
+}
+
+a.jpg
+{
+	padding-left: 18px;
+	background: url(img/icon-jpg.gif) no-repeat;
+}
+
+a.movie
+{
+	padding-left: 18px;
+	background: url(img/icon-movie.gif) no-repeat;
+}
+
+a.pdf
+{
+	padding-left: 18px;
+	background: url(img/icon-pdf.gif) no-repeat;
+}
+
+a.ppt
+{
+	padding-left: 17px;
+	background: url(img/icon-ppt.gif) no-repeat;
+}
+
+a.sound
+{
+	padding-left: 18px;
+	background: url(img/icon-sound.gif) no-repeat;
+}
+
+a.tif
+{
+	padding-left: 17px;
+	background: url(img/icon-tif.gif) no-repeat;
+}
+
+a.xls
+{
+	padding-left: 18px;
+	background: url(img/icon-xls.gif) no-repeat;
+}
+
+a.zip
+{
+	padding-left: 17px;
+	background: url(img/icon-zip.gif) no-repeat;
+}
+
+a.context
+{
+	color: #900;
+	text-decoration: underline;
+}
+
+a.context:hover
+{
+	color: #900;
+	text-decoration: underline;
+}
+
+/*END: links*/
+/***********************************************************************/
+/*START: forms*/
+form.simple-select
+{
+	display: block;
+}
+
+div.select-button-bar
+{
+	padding: 4px 0;
+}
+
+div.right-content div.select-button-bar
+{
+	padding: 4px 0 9px 0;
+	margin-top: -5px;
+}
+
+div.teaser div.select-button-bar
+{
+	margin-top: -6px;
+}
+
+div.select-button-bar select
+{
+	font-size: 11px;
+	display: block;
+	float: left;
+}
+
+div.select-button-bar a.generic-button
+{
+	margin: 2px 0 0 4px;
+}
+
+select.search-options
+{
+	width: 248px;
+}
+
+/*END: forms*/
+/***********************************************************************/
+/*START: lists as used in corporate homepages and portfolio pages */
+
+div.list p
+{
+	padding: 0 0 5px 0;
+}
+
+div.quick-links
+{
+	padding: 6px 0 0 0;
+}
+
+ul.link li
+{
+	text-indent: -11px;
+	padding-left: 11px;
+}
+
+div.link-list ul.link li
+{
+	color: #666;
+	font-weight: bold;
+	padding: 1px 0 7px 11px;
+	width: 265px;
+}
+
+div.link-list ul.link li a
+{
+	color: #666;
+}
+
+div.link-list ul.link li a:hover
+{
+	color: #900;
+}
+
+div.link-lists div.link-list
+{
+	float: left;
+}
+
+div.link-lists div.right-list
+{
+	float: right;
+}
+
+div.link-lists ul.link li
+{
+	width: 116px;
+}
+
+dl.aggregation dt
+{
+	font-weight: bold;
+	color: #666;
+}
+
+dl.aggregation dt a
+{
+	color: #666;
+}
+
+dl.aggregation dt a:hover
+{
+	color: #900;
+}
+
+dl.aggregation dd .dtstart
+{
+	color: #666;
+}
+
+/*END: lists as used in corporate homepages and portfolio pages*/
+/***********************************************************************/
+/*START: teaser as used in corporate homepages and portfolio pages*/
+
+div.teaser div.image
+{
+	padding: 4px 0;
+}
+
+div.teaser div.banner
+{
+	padding: 4px 0 4px;
+}
+
+div.teaser div.image img,
+div.teaser div.banner img
+{
+	display: block;
+}
+
+div.teaser h3
+{
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: bold;
+	padding: 0 0 6px;
+}
+
+div.teaser p,
+div.teaser dl
+{
+	font-size: 11px;
+	line-height: 16px;
+}
+
+div.teaser li
+{
+	font-size: 11px;
+	line-height: 14px;
+	padding-top: 1px;
+	padding-bottom: 3px;
+}
+
+div.teaser ul
+{
+	margin-bottom: -2px;
+}
+
+div.link-list li
+{
+	font-size: 11px;
+	line-height: 14px;
+}
+
+div.link-list ul
+{
+	margin-bottom: -6px;
+}
+
+p.teaser-link a
+{
+	display: block;
+}
+
+p.teaser-link a:hover
+{
+	color: #900;
+}
+
+p.teaser-link a strong
+{
+	display: block;
+}
+/*END: teaser as used in corporate homepages and portfolio pages*/
+/***********************************************************************/
+/*START: misc as used in corporate homepages and portfolio pages */
+
+p.next,
+dt.next
+{
+	padding: 5px 0 0 0;
+}
+
+p.single-link
+{
+	padding: 2px 0 0;
+}
+
+p.single-link a
+{
+	background-position: 0 5px;
+	display: -moz-inline-block; /* Firefox 2.x inline-block fix */
+	display: inline-block;
+	text-indent: 0;
+}
+
+.right-content p.single-link
+{
+	margin-top: -3px;
+}
+
+div.hruler
+{
+	background: #999;
+	height: 1px;
+	margin: 10px 0;
+}
+
+div.spacer-teaser
+{
+	height: 14px;
+}
+
+img.img-float-left
+{
+	float: left;
+	margin: 4px 12px 4px 0;
+}
+/*END: misc as used in corporate homepages and portfolio pages*/
+/***********************************************************************/
+/* START: content tabs */
+
+div.tab-nav-wrapper
+{
+	background: url(./img/tab-nav-ul.gif) bottom left repeat-x;
+	padding: 1px 0 0;
+	margin: 0 0 14px 44px;
+}
+
+ul.tab-nav li
+{
+	font-size: 11px !important;
+	line-height: 16px !important;
+	font-weight: bold;
+	float: left;
+	margin: 0 2px 0 0;
+	background: url(./img/tab-nav-li.gif) top right no-repeat;
+}
+
+
+ul.tab-nav li a,
+ul.tab-nav li span
+{
+	display: block;
+	float: left;
+	padding: 2px 10px 3px 6px;
+}
+
+ul.tab-nav li span
+{
+	padding: 2px 10px 4px 5px;
+}
+
+ul.tab-nav li a:hover
+{
+	color: #900;
+}
+
+ul.tab-nav li.active
+{
+	border-left: 1px solid #999;
+	background: #fff url(./img/tab-nav-li-active.gif) top right no-repeat;
+	color: #900;
+}
+
+/* END: content tabs */
+/***********************************************************************/

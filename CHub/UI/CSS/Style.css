@@ -1,0 +1,146 @@
+﻿.idio_TextAreaNormalStyle
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #93A0A8;
+    height: 60px;
+    width: 300px;
+}
+.idio_TextAreaNormalStyleNoWH
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #93A0A8;
+}
+.idio_TextAreaDisabledStyleNoWH
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #000000;
+    background-color: #D2D4C9;
+    border: 1px solid #93A0A8;
+}
+
+.idio_inputBoxNormalStyle
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #93A0A8;
+    height: 16px;
+    width: 160px;
+}
+.idio_SelectNormalStyle
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #333333;
+    background-color: #FFFFFF;
+    width: 165px;
+}
+.idio_SelectNormalStyleNoWidth
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+.idio_inputBoxDisabledStyle
+{
+    border: 1px solid #93A0A8;
+    color: #000000;
+    text-decoration: none;
+    font-size: 11px;
+    height: 16px;
+    background-color: #D2D4C9;
+    width: 160px;
+}
+.idio_TextAreaDisabledStyle
+{
+    font-family: Verdana, 宋体;
+    font-size: 11px;
+    color: #000000;
+    background-color: #D2D4C9;
+    border: 1px solid #93A0A8;
+    height: 60px;
+    width: 300px;
+}
+.idio_FlatBtnOnMouseOut
+{
+    border: 1px ridge #999999;
+    color: #000066;
+    font-size: 11px;
+    background-image: url('../images/idio_buttonMouseOutbackground.gif');
+    padding-top:2px;
+}
+.idio_FlatBtnOnMouseOver
+{
+    border: 1px ridge #999999;
+    color: #000066;
+    font-size: 11px;
+    background-image: url(../images/idio_buttonMouseOverbackground.gif);
+    padding-top:2px;
+}
+
+.idio_ScroolStyle
+{
+    scrollbar-face-color: #dddddd;
+    scrollbar-shadow-color: #c0c0c0;
+    scrollbar-highlight-color: #f6f6f6;
+    scrollbar-3dlight-color: #f3F3F3;
+    scrollbar-darkshadow-color: #f3F3F3;
+    scrollbar-track-color: #f3F3F3;
+    scrollbar-arrow-color: #000000;
+}
+
+.idio_hiddenItem{display:none;}
+.idio_gridBottom{border-Bottom:1px solid #eeeeee; padding:2px;}
+
+
+
+.aLink:link
+{
+	font-family: Verdana, 宋体;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+.aLink:hover
+{
+	font-family: Verdana, 宋体;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: underline;
+}
+.aLink:active
+{
+	font-family: Verdana, 宋体;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: underline;
+}
+.aLink:visited
+{
+	font-family: Verdana, 宋体;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.FontRed
+{
+    color: #FF0000;
+}
+
+.GridStyle
+{
+    padding:2px;
+    line-height:20px;
+}
+

@@ -1,0 +1,161 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/***************************************************** sifr styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-21 13:13:44 +0100 (Do, 21 Jan 2010) $ *****/
+
+.sIFR-flash
+{
+	visibility: visible !important;
+	margin: 0;
+}
+
+.sIFR-replaced
+{
+	visibility: visible !important;
+}
+
+/* restore flash mouseover after scrolling for gecko based browsers & safari */
+html.win.gecko .sIFR-replaced:hover,
+html.win.safari .sIFR-replaced:hover
+{
+	outline-color: #010101 !important;
+}
+
+.sIFR-replaced embed,
+.sIFR-replaced object
+{
+	display: block;
+}
+
+span.sIFR-alternate
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+/* Hide Adblock Object tab: the text should show up just fine, not poorly with a tab laid over it. */
+.sIFR-hasFlash + div[adblocktab=true]
+{
+	display: none !important;
+}
+
+/* These "decoy" styles are used to hide the browser text before it is replaced. */
+.sIFR-hasFlash div.sifr-header h1,
+.sIFR-hasFlash div.sifr-header h2,
+.sIFR-hasFlash div.sifr-header h3,
+.sIFR-hasFlash div.sifr-h1 h1,
+.sIFR-hasFlash div.sifr-h2 h2,
+.sIFR-hasFlash div.sifr h3,
+.sIFR-hasFlash div.sifr-header h2,
+.sIFR-hasFlash div.link-list ul.link span.sifr
+{
+	visibility: hidden;
+}
+
+.sIFR-hasFlash div.sifr-header
+{
+	margin: 0 0 0 -1px;
+}
+
+.sIFR-hasFlash div.teaser div.sifr
+{
+	padding: 0 0 7px;
+}
+
+.sIFR-hasFlash div.sifr h3
+{
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: normal;
+	padding: 0 !important;
+}
+
+.sIFR-hasFlash div#headertext-zone div.sifr-header h1,
+.sIFR-hasFlash div#headertext-zone div.sifr-header h2
+{
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: normal;
+	width: 300px; /*needed for all IEs*/
+	margin: 0 0 11px 0;
+	padding: 0 !important;
+}
+
+.sIFR-hasFlash body.page-type-content div#headertext-zone div.sifr-header h1,
+.sIFR-hasFlash body.page-type-content div#headertext-zone div.sifr-header h2
+{
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: normal;
+	margin: 0 0 11px 0;
+}
+
+.sIFR-hasFlash body.page-type-1 div#headertext-zone div.sifr-header h1,
+.sIFR-hasFlash body.page-type-1 div#headertext-zone div.sifr-header h2
+{
+	width: 418px; /*needed for all IEs*/
+}
+
+.sIFR-hasFlash div#headertext-zone div.sifr-header h3
+{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	width: 300px; /*needed for all IEs*/
+	margin-left: 0;
+}
+
+.sIFR-hasFlash div.link-list ul.link
+{
+	margin: 0 0 -5px 0;
+}
+
+.sIFR-hasFlash div.link-list ul.link li
+{
+	font-size: 11px;
+	line-height: 15px;
+	background: url(img/icon-link.gif) 0 5px no-repeat;
+	padding: 1px 0 6px 11px;
+}
+
+.sIFR-hasFlash div.link-list ul.link span.sifr
+{
+	display: block;
+}
+
+.sIFR-hasFlash div.link-list ul.link span.sifr a
+{
+	display: block;
+	text-indent: 0;
+	padding: 0;
+	width: 265px; /*needed for all IEs*/
+}
+
+.sIFR-hasFlash div.link-lists div.link-list ul.link span.sifr a
+{
+	width: 116px; /*needed for all IEs*/
+}
+
+.sIFR-hasFlash div.teaser div.sifr h3
+{
+	width: 276px; /*needed for all IEs*/
+	padding: 0 !important;
+}
+
+/************************************************************************/
+/* The main styles used for rendering the non-flash html texts are located in content.css.
+They are changed through the decoy style above for calculating the
+font size in sFIR to get the same paddings and sizes */
+
+.sIFR-hasFlash div.hruler
+{
+	margin: 10px 0 11px 0;
+}

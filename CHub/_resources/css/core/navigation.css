@@ -1,0 +1,1053 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/*********************************************** navigation styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-02-23 10:13:48 +0100 (Di, 23 Feb 2010) $ *****/
+/***********************************************************************/
+/*START: toolbar links*/
+
+p#site-id a:active,
+div#site-id-wrapper.active p#site-id a,
+p#site-id a:hover,
+p#sitemap-link a:active,
+div#site-explorer.active p#sitemap-link a,
+p#sitemap-link a:hover,
+ul#toolbar-nav li a:active,
+ul#toolbar-nav li.active a,
+ul#toolbar-nav li a:hover,
+p#language-switch a:active,
+div#multi-language-switch.active p#language-switch a,
+p#language-switch a:hover
+div.close a:active
+{
+	outline: none;
+	-moz-outline: none;
+}
+
+p#site-id
+{
+	margin: 0 2px 0 0;
+}
+
+p#site-id,
+p#sitemap-link,
+ul#toolbar-nav li
+{
+	float: left;
+}
+
+p#site-id a,
+p#sitemap-link a,
+ul#toolbar-nav li a,
+p#language-switch a
+{
+	display: block;
+	height: 21px;
+	background: no-repeat;
+}
+
+    p#sitemap-link a {
+        display:none;
+    }
+
+p#site-id a:hover,
+p#sitemap-link a:hover,
+ul#toolbar-nav li a:hover,
+p#language-switch a:hover
+{
+	background-position: 0 -21px;
+}
+
+p#site-id a.clicked,
+p#site-id a.clicked:hover,
+p#sitemap-link a.clicked,
+p#sitemap-link a.clicked:hover,
+ul#toolbar-nav li a.clicked,
+ul#toolbar-nav li a.clicked:hover,
+p#language-switch a.clicked,
+p#language-switch a.clicked:hover
+{
+	background-position: 0 0;
+}
+
+p#site-id.active a,
+div#site-id-wrapper.active p#site-id a,
+p#sitemap-link.active a,
+div#site-explorer.active p#sitemap-link a,
+ul#toolbar-nav li.active a,
+div#multi-language-switch.active p#language-switch a
+{
+	background-position: 0 -42px;
+}
+
+p#site-id.active a:hover,
+div#site-id-wrapper.active p#site-id a:hover,
+p#sitemap-link.active a:hover,
+div#site-explorer.active p#sitemap-link a:hover,
+ul#toolbar-nav li.active a:hover,
+div#multi-language-switch.active p#language-switch a:hover
+{
+	background-position: 0 -63px;
+}
+
+p#site-id.active a:active,
+div#site-id-wrapper.active p#site-id a.clicked:hover,
+p#sitemap-link.active a:active,
+div#site-explorer.active p#sitemap-link a.clicked:hover,
+ul#toolbar-nav li.active a.clicked:hover,
+div#multi-language-switch.active p#language-switch a.clicked:hover
+{
+	background-position: 0 -42px;
+}
+
+fieldset#language-switch-noscript
+{
+	float: left;
+}
+
+fieldset#language-switch-noscript select
+{
+	float: left;
+	font-size: 11px;
+	width: 55px;
+	margin: 0 0 0 10px;
+}
+
+fieldset#language-switch-noscript button
+{
+	margin: 2px 0 0 4px;
+}
+/*END: toolbar links*/
+/************************************************************************/
+/*START: breadcrumb*/
+
+dl#breadcrumb
+{
+	width: 916px;
+}
+
+dl#breadcrumb dt
+{
+	font-size: 11px;
+	line-height: 16px;
+	color: #666;
+	float: left;
+	margin: 0 12px 0 0;
+}
+
+dl#breadcrumb dd
+{
+	font-size: 11px;
+	line-height: 16px;
+	float: left;
+	margin: 0 11px 0 0;
+	position: relative;
+	white-space: nowrap;
+	z-index: 5;
+}
+
+dl#breadcrumb a, /* see also a.link */
+dl#breadcrumb span
+{
+	color: #666;
+	display: block;
+	padding: 0 0 0 11px;
+	background: url(img/icon-link.gif) 0 5px no-repeat !important;
+}
+
+dl#breadcrumb a.active,
+dl#breadcrumb a:hover,
+dl#breadcrumb span.active
+{
+	color: #900;
+}
+
+dl#breadcrumb a.active:hover
+{
+	text-decoration: underline;
+}
+
+/*END: breadcrumb*/
+/************************************************************************/
+/*START: footer*/
+
+dl#footer
+{
+	float: left;
+	margin: 2px 0 0 0;
+	width: 916px;
+}
+
+dl#footer dt,
+dl#footer dd
+{
+	font-size: 10px;
+	line-height: 13px;
+	color: #999;
+	display: inline;
+}
+
+dl#footer dt a:hover
+{
+	color: #900;
+}
+
+dl#footer dd a
+{
+	color: #999;
+}
+
+dl#footer span.pipe
+{
+	padding: 0 2px;
+}
+
+/*END: footer*/
+/************************************************************************/
+/*START: language switch*/
+
+div#multi-language-switch
+{
+	float: left;
+	position: relative;
+}
+
+p#language-switch
+{
+	float: left;
+}
+
+ul#language-list
+{
+	background: #f0f0f0;
+	border: solid #fff;
+	border-width: 0 2px 2px 1px;
+	display: none;
+	padding: 9px 10px 13px;
+	position: absolute;
+	top: 21px;
+	left: 0;
+	width: 144px;
+	z-index: 1000;
+}
+
+div#multi-language-switch.active ul#language-list
+{
+	display: block;
+}
+
+ul#language-list li
+{
+	font-size: 11px;
+	line-height: 16px;
+	padding: 1px 0;
+}
+
+ul#language-list a,
+ul#language-list span.active
+{
+	background: url(img/icon-link.gif) no-repeat 0 4px;
+	padding: 0 0 0 11px;
+}
+
+ul#language-list a:hover,
+ul#language-list span.active
+{
+	color: #900;
+}
+
+/*END: language switch*/
+/************************************************************************/
+/*START: site explorer*/
+
+div#site-explorer
+{
+	position: relative;
+	float: left;
+}
+
+div#site-explorer-layer
+{
+	border: solid #fff;
+	border-width: 0 2px 2px 1px;
+	left: 0;
+	width: 321px;
+	position: absolute;
+	top: -7000px;
+	z-index: 1000;
+}
+
+div#site-explorer.active div#site-explorer-layer
+{
+	top: 21px;
+}
+
+div#site-explorer-layer ul
+{
+	padding: 21px 48px 16px 10px;
+}
+
+div#site-explorer-layer ul ul
+{
+	padding: 0 0 0 11px;
+}
+
+div#site-explorer-layer li
+{
+	border-bottom: 1px solid #999;
+	margin: 0 0 4px;
+	padding: 2px 0 9px;
+}
+
+div#site-explorer-layer li li
+{
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+ul.countries li.active,
+div#site-explorer-layer li.active
+{
+	background: #ddd;
+}
+
+div#site-explorer-layer li li.active
+{
+	margin-left: -7px;
+	padding-left: 7px;
+}
+
+div#site-explorer-layer li li li.active
+{
+	margin-left: -20px;
+	padding-left: 20px;
+}
+
+div#site-explorer-layer li li li li.active
+{
+	margin-left: -33px;
+	padding-left: 33px;
+}
+
+div#site-explorer-layer li li li li li.active
+{
+	margin-left: -46px;
+	padding-left: 46px;
+}
+
+div#site-explorer-layer li li li li li li.active
+{
+	margin-left: -59px;
+	padding-left: 59px;
+}
+
+div#site-explorer-layer li li li li li li li.active
+{
+	margin-left: -72px;
+	padding-left: 72px;
+}
+
+div#site-explorer-layer li li li li li li li li.active
+{
+	margin-left: -85px;
+	padding-left: 85px;
+}
+
+div#site-explorer-layer li li li li li li li li li.active
+{
+	margin-left: -98px;
+	padding-left: 98px;
+}
+
+div#site-explorer-layer li a,
+div#site-explorer-layer li span.active
+{
+	color: #666;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	left: -2px;
+	line-height: 16px;
+	padding-left: 13px;
+	position: relative;
+}
+
+div#site-explorer-layer li a:hover,
+div#site-explorer-layer li span.active
+{
+	color: #900;
+}
+
+div#site-explorer-layer li li a,
+div#site-explorer-layer li li span.active
+{
+	font-weight: normal;
+}
+
+div#site-explorer-layer li a
+{
+	background: url(img/icon-folder-collapsed.gif) no-repeat 2px 3px;
+}
+
+div#site-explorer-layer li a.expanded
+{
+	background: url(img/icon-folder-expanded.gif) no-repeat 0 5px;
+	position: relative;
+}
+
+div#site-explorer-layer li.collapsed ul
+{
+	display: none;
+}
+
+div#site-explorer-layer li a.page,
+div#site-explorer-layer li li a.page,
+div#site-explorer-layer span.active
+{
+	background: url(img/icon-link.gif) no-repeat 2px 5px;
+}
+
+/*END: site explorer*/
+/************************************************************************/
+/*START: site id layer*/
+
+div#site-id-wrapper
+{
+	position: relative;
+	float: left;
+}
+
+div#site-id-layer
+{
+	border: solid #fff;
+	border-width: 0 2px 2px 1px;
+	left: 0;
+	width: 939px;
+	position: absolute;
+	top: -7000px;
+	z-index: 1000;
+}
+
+div#site-id-wrapper.active div#site-id-layer
+{
+	top: 21px;
+}
+
+div#site-id-layer div.close
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: none;
+}
+
+div#site-id-layer div.toolbar-content
+{
+	padding: 16px 14px 24px 9px;
+}
+
+div.cols div.col-1
+{
+	float: left;
+	width: 276px;
+}
+
+div.cols div.col-2
+{
+	float: left;
+	width: 276px;
+	margin: 0 0 0 44px;
+}
+
+div.cols div.col-3
+{
+	float: left;
+	width: 276px;
+	margin: 0 0 0 44px;
+}
+
+div#site-id-layer div.hruler
+{
+	margin: 8px 0 10px;
+	background: #999;
+}
+
+div#site-id-layer p.subhead
+{
+	font-size: 11px;
+	line-height: 16px;
+	padding: 0 0 5px;
+}
+
+ul.worldwide
+{
+	width: 272px;
+}
+
+ul.countries li
+{
+	font-size: 11px;
+	line-height: 16px;
+	padding: 3px 0 2px 4px;
+	margin-top: 3px;
+	margin-left: -4px;
+}
+
+ul.countries li:first-child
+{
+	margin-top: 0;
+}
+
+ul.countries li a.c
+{
+	padding-left: 24px;
+	background-image: url(./img/si-country-sprite.gif);
+	background-repeat: no-repeat;
+}
+
+ul.countries li a.worldwide
+{
+	padding-left: 34px;
+	background: url(./img/si-worldwide.gif) no-repeat;
+}
+
+ul.countries li a.worldwide:hover,
+ul.countries li.hover a.worldwide,
+ul.countries li.active a.worldwide
+{
+	background-position: 0 -14px;
+}
+
+ul.countries li a.mobile
+{
+	padding-left: 18px;
+	background: url(./img/si-mobile.gif) 0 1px no-repeat;
+}
+
+ul.countries li a.mobile:hover,
+ul.countries li.hover a.mobile,
+ul.countries li.active a.mobile
+{
+	background-position: 0 -13px;
+}
+
+ul.countries li a:hover,
+ul.countries li a.hover,
+ul.countries li.hover a.c,
+ul.countries li.hover a.worldwide,
+ul.countries li.hover a.mobile,
+ul.countries li.active a.c,
+ul.countries li.active a.worldwide,
+ul.countries li.active a.mobile,
+ul.countries li a.active
+{
+	color: #900;
+}
+
+ul.countries li a.c:hover + a,
+ul.countries li a.worldwide:hover + a,
+ul.countries li a.mobile:hover + a
+{
+	color: #900;
+}
+
+/*language specific styles */
+.zht
+{
+	font-family: PMingLiU, MingLiU, serif;
+	font-size: 140%;
+}
+
+a.ad { background-position: 0 0; }
+a.ae { background-position: 0 -28px; }
+a.af { background-position: 0 -56px; }
+a.ag { background-position: 0 -84px; }
+a.ai { background-position: 0 -112px; }
+a.al { background-position: 0 -140px; }
+a.am { background-position: 0 -168px; }
+a.an { background-position: 0 -196px; }
+a.ao { background-position: 0 -224px; }
+a.ar { background-position: 0 -252px; }
+a.as { background-position: 0 -280px; }
+a.at { background-position: 0 -308px; }
+a.au { background-position: 0 -336px; }
+a.ax { background-position: 0 -364px; }
+a.az { background-position: 0 -392px; }
+a.ba { background-position: 0 -420px; }
+a.bb { background-position: 0 -448px; }
+a.bd { background-position: 0 -476px; }
+a.be { background-position: 0 -504px; }
+a.bf { background-position: 0 -532px; }
+a.bg { background-position: 0 -560px; }
+a.bh { background-position: 0 -588px; }
+a.bi { background-position: 0 -616px; }
+a.bj { background-position: 0 -644px; }
+a.bm { background-position: 0 -672px; }
+a.bn { background-position: 0 -700px; }
+a.bo { background-position: 0 -728px; }
+a.br { background-position: 0 -756px; }
+a.bs { background-position: 0 -784px; }
+a.bt { background-position: 0 -812px; }
+a.bv { background-position: 0 -840px; }
+a.bw { background-position: 0 -868px; }
+a.by { background-position: 0 -896px; }
+a.bz { background-position: 0 -924px; }
+a.ca { background-position: 0 -952px; }
+a.cc { background-position: 0 -980px; }
+a.cd { background-position: 0 -1008px; }
+a.cf { background-position: 0 -1036px; }
+a.cg { background-position: 0 -1064px; }
+a.ch { background-position: 0 -1092px; }
+a.ci { background-position: 0 -1120px; }
+a.ck { background-position: 0 -1148px; }
+a.cl { background-position: 0 -1176px; }
+a.cm { background-position: 0 -1204px; }
+a.cn { background-position: 0 -1232px; }
+a.co { background-position: 0 -1260px; }
+a.cr { background-position: 0 -1288px; }
+a.cs { background-position: 0 -1316px; }
+a.cu { background-position: 0 -1344px; }
+a.cv { background-position: 0 -1372px; }
+a.cx { background-position: 0 -1400px; }
+a.cy { background-position: 0 -1428px; }
+a.cz { background-position: 0 -1456px; }
+a.de { background-position: 0 -1484px; }
+a.dj { background-position: 0 -1512px; }
+a.dk { background-position: 0 -1540px; }
+a.dm { background-position: 0 -1568px; }
+a.do { background-position: 0 -1596px; }
+a.dz { background-position: 0 -1624px; }
+a.ec { background-position: 0 -1652px; }
+a.ee { background-position: 0 -1680px; }
+a.eg { background-position: 0 -1708px; }
+a.eh { background-position: 0 -1736px; }
+a.er { background-position: 0 -1764px; }
+a.es-ct { background-position: 0 -1792px; }
+a.es { background-position: 0 -1820px; }
+a.et { background-position: 0 -1848px; }
+a.eu { background-position: 0 -1876px; }
+a.fi { background-position: 0 -1904px; }
+a.fj { background-position: 0 -1932px; }
+a.fk { background-position: 0 -1960px; }
+a.fm { background-position: 0 -1988px; }
+a.fo { background-position: 0 -2016px; }
+a.fr { background-position: 0 -2044px; }
+a.ga { background-position: 0 -2072px; }
+a.gb-eng { background-position: 0 -2100px; }
+a.gb-sct { background-position: 0 -2128px; }
+a.gb-wls { background-position: 0 -2156px; }
+a.gb { background-position: 0 -2184px; }
+a.gd { background-position: 0 -2212px; }
+a.ge { background-position: 0 -2240px; }
+a.gf { background-position: 0 -2268px; }
+a.gh { background-position: 0 -2296px; }
+a.gi { background-position: 0 -2324px; }
+a.gl { background-position: 0 -2352px; }
+a.gm { background-position: 0 -2380px; }
+a.gn { background-position: 0 -2408px; }
+a.gp { background-position: 0 -2436px; }
+a.gq { background-position: 0 -2464px; }
+a.gr { background-position: 0 -2492px; }
+a.gs { background-position: 0 -2520px; }
+a.gt { background-position: 0 -2548px; }
+a.gu { background-position: 0 -2576px; }
+a.gw { background-position: 0 -2604px; }
+a.gy { background-position: 0 -2632px; }
+a.hk { background-position: 0 -2660px; }
+a.hn { background-position: 0 -2688px; }
+a.hr { background-position: 0 -2716px; }
+a.ht { background-position: 0 -2744px; }
+a.hu { background-position: 0 -2772px; }
+a.id { background-position: 0 -2800px; }
+a.ie { background-position: 0 -2828px; }
+a.il { background-position: 0 -2856px; }
+a.in { background-position: 0 -2884px; }
+a.io { background-position: 0 -2912px; }
+a.iq { background-position: 0 -2940px; }
+a.ir { background-position: 0 -2968px; }
+a.is { background-position: 0 -2996px; }
+a.it { background-position: 0 -3024px; }
+a.jm { background-position: 0 -3052px; }
+a.jo { background-position: 0 -3080px; }
+a.jp { background-position: 0 -3108px; }
+a.ke { background-position: 0 -3136px; }
+a.kg { background-position: 0 -3164px; }
+a.kh { background-position: 0 -3192px; }
+a.ki { background-position: 0 -3220px; }
+a.km { background-position: 0 -3248px; }
+a.kn { background-position: 0 -3276px; }
+a.kp { background-position: 0 -3304px; }
+a.kr { background-position: 0 -3332px; }
+a.kw { background-position: 0 -3360px; }
+a.ky { background-position: 0 -3388px; }
+a.kz { background-position: 0 -3416px; }
+a.la { background-position: 0 -3444px; }
+a.lb { background-position: 0 -3472px; }
+a.lc { background-position: 0 -3500px; }
+a.li { background-position: 0 -3528px; }
+a.lk { background-position: 0 -3556px; }
+a.lr { background-position: 0 -3584px; }
+a.ls { background-position: 0 -3612px; }
+a.lt { background-position: 0 -3640px; }
+a.lu { background-position: 0 -3668px; }
+a.lv { background-position: 0 -3696px; }
+a.ly { background-position: 0 -3724px; }
+a.ma { background-position: 0 -3752px; }
+a.mc { background-position: 0 -3780px; }
+a.md { background-position: 0 -3808px; }
+a.me { background-position: 0 -3836px; }
+a.mg { background-position: 0 -3864px; }
+a.mh { background-position: 0 -3892px; }
+a.mk { background-position: 0 -3920px; }
+a.ml { background-position: 0 -3948px; }
+a.mm { background-position: 0 -3976px; }
+a.mn { background-position: 0 -4004px; }
+a.mo { background-position: 0 -4032px; }
+a.mp { background-position: 0 -4060px; }
+a.mq { background-position: 0 -4088px; }
+a.mr { background-position: 0 -4116px; }
+a.ms { background-position: 0 -4144px; }
+a.mt { background-position: 0 -4172px; }
+a.mu { background-position: 0 -4200px; }
+a.mv { background-position: 0 -4228px; }
+a.mw { background-position: 0 -4256px; }
+a.mx { background-position: 0 -4284px; }
+a.my { background-position: 0 -4312px; }
+a.mz { background-position: 0 -4340px; }
+a.na { background-position: 0 -4368px; }
+a.nc { background-position: 0 -4396px; }
+a.ne { background-position: 0 -4424px; }
+a.nf { background-position: 0 -4452px; }
+a.ng { background-position: 0 -4480px; }
+a.ni { background-position: 0 -4508px; }
+a.nl { background-position: 0 -4536px; }
+a.no { background-position: 0 -4564px; }
+a.np { background-position: 0 -4592px; }
+a.nr { background-position: 0 -4620px; }
+a.nu { background-position: 0 -4648px; }
+a.nz { background-position: 0 -4676px; }
+a.om { background-position: 0 -4704px; }
+a.pa { background-position: 0 -4732px; }
+a.pe { background-position: 0 -4760px; }
+a.pf { background-position: 0 -4788px; }
+a.pg { background-position: 0 -4816px; }
+a.ph { background-position: 0 -4844px; }
+a.pk { background-position: 0 -4872px; }
+a.pl { background-position: 0 -4900px; }
+a.pm { background-position: 0 -4928px; }
+a.pn { background-position: 0 -4956px; }
+a.pr { background-position: 0 -4984px; }
+a.ps { background-position: 0 -5012px; }
+a.pt { background-position: 0 -5040px; }
+a.pw { background-position: 0 -5068px; }
+a.py { background-position: 0 -5096px; }
+a.qa { background-position: 0 -5124px; }
+a.re { background-position: 0 -5152px; }
+a.ro { background-position: 0 -5180px; }
+a.rs { background-position: 0 -5208px; }
+a.ru { background-position: 0 -5236px; }
+a.rw { background-position: 0 -5264px; }
+a.sa { background-position: 0 -5292px; }
+a.sb { background-position: 0 -5320px; }
+a.sc { background-position: 0 -5348px; }
+a.sd { background-position: 0 -5376px; }
+a.se { background-position: 0 -5404px; }
+a.sg { background-position: 0 -5432px; }
+a.sh { background-position: 0 -5460px; }
+a.si { background-position: 0 -5488px; }
+a.sj { background-position: 0 -5516px; }
+a.sk { background-position: 0 -5544px; }
+a.sl { background-position: 0 -5572px; }
+a.sm { background-position: 0 -5600px; }
+a.sn { background-position: 0 -5628px; }
+a.so { background-position: 0 -5656px; }
+a.sr { background-position: 0 -5684px; }
+a.st { background-position: 0 -5712px; }
+a.sv { background-position: 0 -5740px; }
+a.sy { background-position: 0 -5768px; }
+a.sz { background-position: 0 -5796px; }
+a.tc { background-position: 0 -5824px; }
+a.td { background-position: 0 -5852px; }
+a.tf { background-position: 0 -5880px; }
+a.tg { background-position: 0 -5908px; }
+a.th { background-position: 0 -5936px; }
+a.tj { background-position: 0 -5964px; }
+a.tk { background-position: 0 -5992px; }
+a.tl { background-position: 0 -6020px; }
+a.tm { background-position: 0 -6048px; }
+a.tn { background-position: 0 -6076px; }
+a.to { background-position: 0 -6104px; }
+a.tr { background-position: 0 -6132px; }
+a.tt { background-position: 0 -6160px; }
+a.tv { background-position: 0 -6188px; }
+a.tw { background-position: 0 -6216px; }
+a.tz { background-position: 0 -6244px; }
+a.ua { background-position: 0 -6272px; }
+a.ug { background-position: 0 -6300px; }
+a.us { background-position: 0 -6328px; }
+a.uy { background-position: 0 -6356px; }
+a.uz { background-position: 0 -6384px; }
+a.va { background-position: 0 -6412px; }
+a.vc { background-position: 0 -6440px; }
+a.ve { background-position: 0 -6468px; }
+a.vg { background-position: 0 -6496px; }
+a.vi { background-position: 0 -6524px; }
+a.vn { background-position: 0 -6552px; }
+a.vu { background-position: 0 -6580px; }
+a.wf { background-position: 0 -6608px; }
+a.ws { background-position: 0 -6636px; }
+a.ye { background-position: 0 -6664px; }
+a.yt { background-position: 0 -6692px; }
+a.za { background-position: 0 -6720px; }
+a.zm { background-position: 0 -6748px; }
+a.zw { background-position: 0 -6776px; }
+
+li.hover a.ad, li.active a.ad, a.ad:hover { background-position: 0 -14px; }
+li.hover a.ae, li.active a.ae, a.ae:hover { background-position: 0 -42px; }
+li.hover a.af, li.active a.af, a.af:hover { background-position: 0 -70px; }
+li.hover a.ag, li.active a.ag, a.ag:hover { background-position: 0 -98px; }
+li.hover a.ai, li.active a.ai, a.ai:hover { background-position: 0 -126px; }
+li.hover a.al, li.active a.al, a.al:hover { background-position: 0 -154px; }
+li.hover a.am, li.active a.am, a.am:hover { background-position: 0 -182px; }
+li.hover a.an, li.active a.an, a.an:hover { background-position: 0 -210px; }
+li.hover a.ao, li.active a.ao, a.ao:hover { background-position: 0 -238px; }
+li.hover a.ar, li.active a.ar, a.ar:hover { background-position: 0 -266px; }
+li.hover a.as, li.active a.as, a.as:hover { background-position: 0 -294px; }
+li.hover a.at, li.active a.at, a.at:hover { background-position: 0 -322px; }
+li.hover a.au, li.active a.au, a.au:hover { background-position: 0 -350px; }
+li.hover a.ax, li.active a.ax, a.ax:hover { background-position: 0 -378px; }
+li.hover a.az, li.active a.az, a.az:hover { background-position: 0 -406px; }
+li.hover a.ba, li.active a.ba, a.ba:hover { background-position: 0 -434px; }
+li.hover a.bb, li.active a.bb, a.bb:hover { background-position: 0 -462px; }
+li.hover a.bd, li.active a.bd, a.bd:hover { background-position: 0 -490px; }
+li.hover a.be, li.active a.be, a.be:hover { background-position: 0 -518px; }
+li.hover a.bf, li.active a.bf, a.bf:hover { background-position: 0 -546px; }
+li.hover a.bg, li.active a.bg, a.bg:hover { background-position: 0 -574px; }
+li.hover a.bh, li.active a.bh, a.bh:hover { background-position: 0 -602px; }
+li.hover a.bi, li.active a.bi, a.bi:hover { background-position: 0 -630px; }
+li.hover a.bj, li.active a.bj, a.bj:hover { background-position: 0 -658px; }
+li.hover a.bm, li.active a.bm, a.bm:hover { background-position: 0 -686px; }
+li.hover a.bn, li.active a.bn, a.bn:hover { background-position: 0 -714px; }
+li.hover a.bo, li.active a.bo, a.bo:hover { background-position: 0 -742px; }
+li.hover a.br, li.active a.br, a.br:hover { background-position: 0 -770px; }
+li.hover a.bs, li.active a.bs, a.bs:hover { background-position: 0 -798px; }
+li.hover a.bt, li.active a.bt, a.bt:hover { background-position: 0 -826px; }
+li.hover a.bv, li.active a.bv, a.bv:hover { background-position: 0 -854px; }
+li.hover a.bw, li.active a.bw, a.bw:hover { background-position: 0 -882px; }
+li.hover a.by, li.active a.by, a.by:hover { background-position: 0 -910px; }
+li.hover a.bz, li.active a.bz, a.bz:hover { background-position: 0 -938px; }
+li.hover a.ca, li.active a.ca, a.ca:hover { background-position: 0 -966px; }
+li.hover a.cc, li.active a.cc, a.cc:hover { background-position: 0 -994px; }
+li.hover a.cd, li.active a.cd, a.cd:hover { background-position: 0 -1022px; }
+li.hover a.cf, li.active a.cf, a.cf:hover { background-position: 0 -1050px; }
+li.hover a.cg, li.active a.cg, a.cg:hover { background-position: 0 -1078px; }
+li.hover a.ch, li.active a.ch, a.ch:hover { background-position: 0 -1106px; }
+li.hover a.ci, li.active a.ci, a.ci:hover { background-position: 0 -1134px; }
+li.hover a.ck, li.active a.ck, a.ck:hover { background-position: 0 -1162px; }
+li.hover a.cl, li.active a.cl, a.cl:hover { background-position: 0 -1190px; }
+li.hover a.cm, li.active a.cm, a.cm:hover { background-position: 0 -1218px; }
+li.hover a.cn, li.active a.cn, a.cn:hover { background-position: 0 -1246px; }
+li.hover a.co, li.active a.co, a.co:hover { background-position: 0 -1274px; }
+li.hover a.cr, li.active a.cr, a.cr:hover { background-position: 0 -1302px; }
+li.hover a.cs, li.active a.cs, a.cs:hover { background-position: 0 -1330px; }
+li.hover a.cu, li.active a.cu, a.cu:hover { background-position: 0 -1358px; }
+li.hover a.cv, li.active a.cv, a.cv:hover { background-position: 0 -1386px; }
+li.hover a.cx, li.active a.cx, a.cx:hover { background-position: 0 -1414px; }
+li.hover a.cy, li.active a.cy, a.cy:hover { background-position: 0 -1442px; }
+li.hover a.cz, li.active a.cz, a.cz:hover { background-position: 0 -1470px; }
+li.hover a.de, li.active a.de, a.de:hover { background-position: 0 -1498px; }
+li.hover a.dj, li.active a.dj, a.dj:hover { background-position: 0 -1526px; }
+li.hover a.dk, li.active a.dk, a.dk:hover { background-position: 0 -1554px; }
+li.hover a.dm, li.active a.dm, a.dm:hover { background-position: 0 -1582px; }
+li.hover a.do, li.active a.do, a.do:hover { background-position: 0 -1610px; }
+li.hover a.dz, li.active a.dz, a.dz:hover { background-position: 0 -1638px; }
+li.hover a.ec, li.active a.ec, a.ec:hover { background-position: 0 -1666px; }
+li.hover a.ee, li.active a.ee, a.ee:hover { background-position: 0 -1694px; }
+li.hover a.eg, li.active a.eg, a.eg:hover { background-position: 0 -1722px; }
+li.hover a.eh, li.active a.eh, a.eh:hover { background-position: 0 -1750px; }
+li.hover a.er, li.active a.er, a.er:hover { background-position: 0 -1778px; }
+li.hover a.es-ct, li.active a.es-ct, a.es-ct:hover { background-position: 0 -1806px; }
+li.hover a.es, li.active a.es, a.es:hover { background-position: 0 -1834px; }
+li.hover a.et, li.active a.et, a.et:hover { background-position: 0 -1862px; }
+li.hover a.eu, li.active a.eu, a.eu:hover { background-position: 0 -1890px; }
+li.hover a.fi, li.active a.fi, a.fi:hover { background-position: 0 -1918px; }
+li.hover a.fj, li.active a.fj, a.fj:hover { background-position: 0 -1946px; }
+li.hover a.fk, li.active a.fk, a.fk:hover { background-position: 0 -1974px; }
+li.hover a.fm, li.active a.fm, a.fm:hover { background-position: 0 -2002px; }
+li.hover a.fo, li.active a.fo, a.fo:hover { background-position: 0 -2030px; }
+li.hover a.fr, li.active a.fr, a.fr:hover { background-position: 0 -2058px; }
+li.hover a.ga, li.active a.ga, a.ga:hover { background-position: 0 -2086px; }
+li.hover a.gb-eng, li.active a.gb-eng, a.gb-eng:hover { background-position: 0 -2114px; }
+li.hover a.gb-sct, li.active a.gb-sct, a.gb-sct:hover { background-position: 0 -2142px; }
+li.hover a.gb-wls, li.active a.gb-wls, a.gb-wls:hover { background-position: 0 -2170px; }
+li.hover a.gb, li.active a.gb, a.gb:hover { background-position: 0 -2198px; }
+li.hover a.gd, li.active a.gd, a.gd:hover { background-position: 0 -2226px; }
+li.hover a.ge, li.active a.ge, a.ge:hover { background-position: 0 -2254px; }
+li.hover a.gf, li.active a.gf, a.gf:hover { background-position: 0 -2282px; }
+li.hover a.gh, li.active a.gh, a.gh:hover { background-position: 0 -2310px; }
+li.hover a.gi, li.active a.gi, a.gi:hover { background-position: 0 -2338px; }
+li.hover a.gl, li.active a.gl, a.gl:hover { background-position: 0 -2366px; }
+li.hover a.gm, li.active a.gm, a.gm:hover { background-position: 0 -2394px; }
+li.hover a.gn, li.active a.gn, a.gn:hover { background-position: 0 -2422px; }
+li.hover a.gp, li.active a.gp, a.gp:hover { background-position: 0 -2450px; }
+li.hover a.gq, li.active a.gq, a.gq:hover { background-position: 0 -2478px; }
+li.hover a.gr, li.active a.gr, a.gr:hover { background-position: 0 -2506px; }
+li.hover a.gs, li.active a.gs, a.gs:hover { background-position: 0 -2534px; }
+li.hover a.gt, li.active a.gt, a.gt:hover { background-position: 0 -2562px; }
+li.hover a.gu, li.active a.gu, a.gu:hover { background-position: 0 -2590px; }
+li.hover a.gw, li.active a.gw, a.gw:hover { background-position: 0 -2618px; }
+li.hover a.gy, li.active a.gy, a.gy:hover { background-position: 0 -2646px; }
+li.hover a.hk, li.active a.hk, a.hk:hover { background-position: 0 -2674px; }
+li.hover a.hn, li.active a.hn, a.hn:hover { background-position: 0 -2702px; }
+li.hover a.hr, li.active a.hr, a.hr:hover { background-position: 0 -2730px; }
+li.hover a.ht, li.active a.ht, a.ht:hover { background-position: 0 -2758px; }
+li.hover a.hu, li.active a.hu, a.hu:hover { background-position: 0 -2786px; }
+li.hover a.id, li.active a.id, a.id:hover { background-position: 0 -2814px; }
+li.hover a.ie, li.active a.ie, a.ie:hover { background-position: 0 -2842px; }
+li.hover a.il, li.active a.il, a.il:hover { background-position: 0 -2870px; }
+li.hover a.in, li.active a.in, a.in:hover { background-position: 0 -2898px; }
+li.hover a.io, li.active a.io, a.io:hover { background-position: 0 -2926px; }
+li.hover a.iq, li.active a.iq, a.iq:hover { background-position: 0 -2954px; }
+li.hover a.ir, li.active a.ir, a.ir:hover { background-position: 0 -2982px; }
+li.hover a.is, li.active a.is, a.is:hover { background-position: 0 -3010px; }
+li.hover a.it, li.active a.it, a.it:hover { background-position: 0 -3038px; }
+li.hover a.jm, li.active a.jm, a.jm:hover { background-position: 0 -3066px; }
+li.hover a.jo, li.active a.jo, a.jo:hover { background-position: 0 -3094px; }
+li.hover a.jp, li.active a.jp, a.jp:hover { background-position: 0 -3122px; }
+li.hover a.ke, li.active a.ke, a.ke:hover { background-position: 0 -3150px; }
+li.hover a.kg, li.active a.kg, a.kg:hover { background-position: 0 -3178px; }
+li.hover a.kh, li.active a.kh, a.kh:hover { background-position: 0 -3206px; }
+li.hover a.ki, li.active a.ki, a.ki:hover { background-position: 0 -3234px; }
+li.hover a.km, li.active a.km, a.km:hover { background-position: 0 -3262px; }
+li.hover a.kn, li.active a.kn, a.kn:hover { background-position: 0 -3290px; }
+li.hover a.kp, li.active a.kp, a.kp:hover { background-position: 0 -3318px; }
+li.hover a.kr, li.active a.kr, a.kr:hover { background-position: 0 -3346px; }
+li.hover a.kw, li.active a.kw, a.kw:hover { background-position: 0 -3374px; }
+li.hover a.ky, li.active a.ky, a.ky:hover { background-position: 0 -3402px; }
+li.hover a.kz, li.active a.kz, a.kz:hover { background-position: 0 -3430px; }
+li.hover a.la, li.active a.la, a.la:hover { background-position: 0 -3458px; }
+li.hover a.lb, li.active a.lb, a.lb:hover { background-position: 0 -3486px; }
+li.hover a.lc, li.active a.lc, a.lc:hover { background-position: 0 -3514px; }
+li.hover a.li, li.active a.li, a.li:hover { background-position: 0 -3542px; }
+li.hover a.lk, li.active a.lk, a.lk:hover { background-position: 0 -3570px; }
+li.hover a.lr, li.active a.lr, a.lr:hover { background-position: 0 -3598px; }
+li.hover a.ls, li.active a.ls, a.ls:hover { background-position: 0 -3626px; }
+li.hover a.lt, li.active a.lt, a.lt:hover { background-position: 0 -3654px; }
+li.hover a.lu, li.active a.lu, a.lu:hover { background-position: 0 -3682px; }
+li.hover a.lv, li.active a.lv, a.lv:hover { background-position: 0 -3710px; }
+li.hover a.ly, li.active a.ly, a.ly:hover { background-position: 0 -3738px; }
+li.hover a.ma, li.active a.ma, a.ma:hover { background-position: 0 -3766px; }
+li.hover a.mc, li.active a.mc, a.mc:hover { background-position: 0 -3794px; }
+li.hover a.md, li.active a.md, a.md:hover { background-position: 0 -3822px; }
+li.hover a.me, li.active a.me, a.me:hover { background-position: 0 -3850px; }
+li.hover a.mg, li.active a.mg, a.mg:hover { background-position: 0 -3878px; }
+li.hover a.mh, li.active a.mh, a.mh:hover { background-position: 0 -3906px; }
+li.hover a.mk, li.active a.mk, a.mk:hover { background-position: 0 -3934px; }
+li.hover a.ml, li.active a.ml, a.ml:hover { background-position: 0 -3962px; }
+li.hover a.mm, li.active a.mm, a.mm:hover { background-position: 0 -3990px; }
+li.hover a.mn, li.active a.mn, a.mn:hover { background-position: 0 -4018px; }
+li.hover a.mo, li.active a.mo, a.mo:hover { background-position: 0 -4046px; }
+li.hover a.mp, li.active a.mp, a.mp:hover { background-position: 0 -4074px; }
+li.hover a.mq, li.active a.mq, a.mq:hover { background-position: 0 -4102px; }
+li.hover a.mr, li.active a.mr, a.mr:hover { background-position: 0 -4130px; }
+li.hover a.ms, li.active a.ms, a.ms:hover { background-position: 0 -4158px; }
+li.hover a.mt, li.active a.mt, a.mt:hover { background-position: 0 -4186px; }
+li.hover a.mu, li.active a.mu, a.mu:hover { background-position: 0 -4214px; }
+li.hover a.mv, li.active a.mv, a.mv:hover { background-position: 0 -4242px; }
+li.hover a.mw, li.active a.mw, a.mw:hover { background-position: 0 -4270px; }
+li.hover a.mx, li.active a.mx, a.mx:hover { background-position: 0 -4298px; }
+li.hover a.my, li.active a.my, a.my:hover { background-position: 0 -4326px; }
+li.hover a.mz, li.active a.mz, a.mz:hover { background-position: 0 -4354px; }
+li.hover a.na, li.active a.na, a.na:hover { background-position: 0 -4382px; }
+li.hover a.nc, li.active a.nc, a.nc:hover { background-position: 0 -4410px; }
+li.hover a.ne, li.active a.ne, a.ne:hover { background-position: 0 -4438px; }
+li.hover a.nf, li.active a.nf, a.nf:hover { background-position: 0 -4466px; }
+li.hover a.ng, li.active a.ng, a.ng:hover { background-position: 0 -4494px; }
+li.hover a.ni, li.active a.ni, a.ni:hover { background-position: 0 -4522px; }
+li.hover a.nl, li.active a.nl, a.nl:hover { background-position: 0 -4550px; }
+li.hover a.no, li.active a.no, a.no:hover { background-position: 0 -4578px; }
+li.hover a.np, li.active a.np, a.np:hover { background-position: 0 -4606px; }
+li.hover a.nr, li.active a.nr, a.nr:hover { background-position: 0 -4634px; }
+li.hover a.nu, li.active a.nu, a.nu:hover { background-position: 0 -4662px; }
+li.hover a.nz, li.active a.nz, a.nz:hover { background-position: 0 -4690px; }
+li.hover a.om, li.active a.om, a.om:hover { background-position: 0 -4718px; }
+li.hover a.pa, li.active a.pa, a.pa:hover { background-position: 0 -4746px; }
+li.hover a.pe, li.active a.pe, a.pe:hover { background-position: 0 -4774px; }
+li.hover a.pf, li.active a.pf, a.pf:hover { background-position: 0 -4802px; }
+li.hover a.pg, li.active a.pg, a.pg:hover { background-position: 0 -4830px; }
+li.hover a.ph, li.active a.ph, a.ph:hover { background-position: 0 -4858px; }
+li.hover a.pk, li.active a.pk, a.pk:hover { background-position: 0 -4886px; }
+li.hover a.pl, li.active a.pl, a.pl:hover { background-position: 0 -4914px; }
+li.hover a.pm, li.active a.pm, a.pm:hover { background-position: 0 -4942px; }
+li.hover a.pn, li.active a.pn, a.pn:hover { background-position: 0 -4970px; }
+li.hover a.pr, li.active a.pr, a.pr:hover { background-position: 0 -4998px; }
+li.hover a.ps, li.active a.ps, a.ps:hover { background-position: 0 -5026px; }
+li.hover a.pt, li.active a.pt, a.pt:hover { background-position: 0 -5054px; }
+li.hover a.pw, li.active a.pw, a.pw:hover { background-position: 0 -5082px; }
+li.hover a.py, li.active a.py, a.py:hover { background-position: 0 -5110px; }
+li.hover a.qa, li.active a.qa, a.qa:hover { background-position: 0 -5138px; }
+li.hover a.re, li.active a.re, a.re:hover { background-position: 0 -5166px; }
+li.hover a.ro, li.active a.ro, a.ro:hover { background-position: 0 -5194px; }
+li.hover a.rs, li.active a.rs, a.rs:hover { background-position: 0 -5222px; }
+li.hover a.ru, li.active a.ru, a.ru:hover { background-position: 0 -5250px; }
+li.hover a.rw, li.active a.rw, a.rw:hover { background-position: 0 -5278px; }
+li.hover a.sa, li.active a.sa, a.sa:hover { background-position: 0 -5306px; }
+li.hover a.sb, li.active a.sb, a.sb:hover { background-position: 0 -5334px; }
+li.hover a.sc, li.active a.sc, a.sc:hover { background-position: 0 -5362px; }
+li.hover a.sd, li.active a.sd, a.sd:hover { background-position: 0 -5390px; }
+li.hover a.se, li.active a.se, a.se:hover { background-position: 0 -5418px; }
+li.hover a.sg, li.active a.sg, a.sg:hover { background-position: 0 -5446px; }
+li.hover a.sh, li.active a.sh, a.sh:hover { background-position: 0 -5474px; }
+li.hover a.si, li.active a.si, a.si:hover { background-position: 0 -5502px; }
+li.hover a.sj, li.active a.sj, a.sj:hover { background-position: 0 -5530px; }
+li.hover a.sk, li.active a.sk, a.sk:hover { background-position: 0 -5558px; }
+li.hover a.sl, li.active a.sl, a.sl:hover { background-position: 0 -5586px; }
+li.hover a.sm, li.active a.sm, a.sm:hover { background-position: 0 -5614px; }
+li.hover a.sn, li.active a.sn, a.sn:hover { background-position: 0 -5642px; }
+li.hover a.so, li.active a.so, a.so:hover { background-position: 0 -5670px; }
+li.hover a.sr, li.active a.sr, a.sr:hover { background-position: 0 -5698px; }
+li.hover a.st, li.active a.st, a.st:hover { background-position: 0 -5726px; }
+li.hover a.sv, li.active a.sv, a.sv:hover { background-position: 0 -5754px; }
+li.hover a.sy, li.active a.sy, a.sy:hover { background-position: 0 -5782px; }
+li.hover a.sz, li.active a.sz, a.sz:hover { background-position: 0 -5810px; }
+li.hover a.tc, li.active a.tc, a.tc:hover { background-position: 0 -5838px; }
+li.hover a.td, li.active a.td, a.td:hover { background-position: 0 -5866px; }
+li.hover a.tf, li.active a.tf, a.tf:hover { background-position: 0 -5894px; }
+li.hover a.tg, li.active a.tg, a.tg:hover { background-position: 0 -5922px; }
+li.hover a.th, li.active a.th, a.th:hover { background-position: 0 -5950px; }
+li.hover a.tj, li.active a.tj, a.tj:hover { background-position: 0 -5978px; }
+li.hover a.tk, li.active a.tk, a.tk:hover { background-position: 0 -6006px; }
+li.hover a.tl, li.active a.tl, a.tl:hover { background-position: 0 -6034px; }
+li.hover a.tm, li.active a.tm, a.tm:hover { background-position: 0 -6062px; }
+li.hover a.tn, li.active a.tn, a.tn:hover { background-position: 0 -6090px; }
+li.hover a.to, li.active a.to, a.to:hover { background-position: 0 -6118px; }
+li.hover a.tr, li.active a.tr, a.tr:hover { background-position: 0 -6146px; }
+li.hover a.tt, li.active a.tt, a.tt:hover { background-position: 0 -6174px; }
+li.hover a.tv, li.active a.tv, a.tv:hover { background-position: 0 -6202px; }
+li.hover a.tw, li.active a.tw, a.tw:hover { background-position: 0 -6230px; }
+li.hover a.tz, li.active a.tz, a.tz:hover { background-position: 0 -6258px; }
+li.hover a.ua, li.active a.ua, a.ua:hover { background-position: 0 -6286px; }
+li.hover a.ug, li.active a.ug, a.ug:hover { background-position: 0 -6314px; }
+li.hover a.us, li.active a.us, a.us:hover { background-position: 0 -6342px; }
+li.hover a.uy, li.active a.uy, a.uy:hover { background-position: 0 -6370px; }
+li.hover a.uz, li.active a.uz, a.uz:hover { background-position: 0 -6398px; }
+li.hover a.va, li.active a.va, a.va:hover { background-position: 0 -6426px; }
+li.hover a.vc, li.active a.vc, a.vc:hover { background-position: 0 -6454px; }
+li.hover a.ve, li.active a.ve, a.ve:hover { background-position: 0 -6482px; }
+li.hover a.vg, li.active a.vg, a.vg:hover { background-position: 0 -6510px; }
+li.hover a.vi, li.active a.vi, a.vi:hover { background-position: 0 -6538px; }
+li.hover a.vn, li.active a.vn, a.vn:hover { background-position: 0 -6566px; }
+li.hover a.vu, li.active a.vu, a.vu:hover { background-position: 0 -6594px; }
+li.hover a.wf, li.active a.wf, a.wf:hover { background-position: 0 -6622px; }
+li.hover a.ws, li.active a.ws, a.ws:hover { background-position: 0 -6650px; }
+li.hover a.ye, li.active a.ye, a.ye:hover { background-position: 0 -6678px; }
+li.hover a.yt, li.active a.yt, a.yt:hover { background-position: 0 -6706px; }
+li.hover a.za, li.active a.za, a.za:hover { background-position: 0 -6734px; }
+li.hover a.zm, li.active a.zm, a.zm:hover { background-position: 0 -6762px; }
+li.hover a.zw, li.active a.zw, a.zw:hover { background-position: 0 -6790px; }
+
+/*END: site id layer*/
+/************************************************************************/

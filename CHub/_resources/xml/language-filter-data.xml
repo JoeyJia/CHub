@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<ResultSet SeName="unused" QueryTime="unused">
+	
+	<additionalInfo>
+
+		<!-- displayed text. Shouldn't be in the xsl for i18n -->
+		<title>Filter by Language</title>
+		<filter>filter</filter>
+		<results>results</results>
+
+		<!-- the url of the form. Could be in the xsl as well -->
+		<action>./search.html</action>
+
+		<!-- id of the filter that requested this xml -->
+		<id>language</id>
+
+		<!-- defines the filter value that is selected -->
+		<selectedFilterMixin>fHwgK2xhbmd1YWdlczpeZW4kfHx8fHxMYW5ndWFnZXxFbmdsaXNo</selectedFilterMixin>
+
+	</additionalInfo>
+	
+	<Engine SubSeName="Fulltext" NumResults="unused" Paging="unused">
+		<SubmittedQuery><![CDATA[unused]]>
+			<UserQuery><![CDATA["<strong>energy saving</strong>"]]></UserQuery>
+			<UsedFilters></UsedFilters>
+		</SubmittedQuery>
+		<QuerySuggestions/>
+		<!-- skip Result nodes -->
+	</Engine>
+	<Engine SubSeName="Navigators">
+		<UsedNavigators>
+			<drillfilter>
+				<Display></Display>
+				<Link></Link>
+			</drillfilter>
+			<drillnames>
+				<Display></Display>
+				<Link></Link>
+			</drillnames>
+			<MixIn Value="fHx8"/>
+		</UsedNavigators>
+		<!-- skip irrelevant Navigator nodes -->
+		<Navigator Name="Language" InternalNavigatorName="languagesnavigator" ALLName="Any language" Param="language" Count="20" orgselectedfiltername="">
+			<Element Name="zh" Display="Chinese" Link="Chinese" Filter="^zh$" Value="1088" MixIn="fHwgK2xhbmd1YWdlczpeemgkfHx8fHxMYW5ndWFnZXxDaGluZXNl"/>
+			<Element Name="cs" Display="Czech" Link="Czech" Filter="^cs$" Value="342" MixIn="fHwgK2xhbmd1YWdlczpeY3MkfHx8fHxMYW5ndWFnZXxDemVjaA=="/>
+			<Element Name="da" Display="Danish" Link="Danish" Filter="^da$" Value="243" MixIn="fHwgK2xhbmd1YWdlczpeZGEkfHx8fHxMYW5ndWFnZXxEYW5pc2g="/>
+			<Element Name="nl" Display="Dutch" Link="Dutch" Filter="^nl$" Value="1357" MixIn="fHwgK2xhbmd1YWdlczpebmwkfHx8fHxMYW5ndWFnZXxEdXRjaA=="/>
+			<Element Name="en" Display="English" Link="English" Filter="^en$" Value="120310" MixIn="fHwgK2xhbmd1YWdlczpeZW4kfHx8fHxMYW5ndWFnZXxFbmdsaXNo"/>
+			<Element Name="fr" Display="French" Link="French" Filter="^fr$" Value="4698" MixIn="fHwgK2xhbmd1YWdlczpeZnIkfHx8fHxMYW5ndWFnZXxGcmVuY2g="/>
+			<Element Name="de" Display="German" Link="German" Filter="^de$" Value="11111" MixIn="fHwgK2xhbmd1YWdlczpeZGUkfHx8fHxMYW5ndWFnZXxHZXJtYW4="/>
+			<Element Name="it" Display="Italian" Link="Italian" Filter="^it$" Value="5095" MixIn="fHwgK2xhbmd1YWdlczpeaXQkfHx8fHxMYW5ndWFnZXxJdGFsaWFu"/>
+			<Element Name="ja" Display="Japanese" Link="Japanese" Filter="^ja$" Value="158" MixIn="fHwgK2xhbmd1YWdlczpeamEkfHx8fHxMYW5ndWFnZXxKYXBhbmVzZQ=="/>
+			<Element Name="ko" Display="Korean" Link="Korean" Filter="^ko$" Value="776" MixIn="fHwgK2xhbmd1YWdlczpea28kfHx8fHxMYW5ndWFnZXxLb3JlYW4="/>
+			<Element Name="pl" Display="Polish" Link="Polish" Filter="^pl$" Value="658" MixIn="fHwgK2xhbmd1YWdlczpecGwkfHx8fHxMYW5ndWFnZXxQb2xpc2g="/>
+			<Element Name="pt" Display="Portuguese" Link="Portuguese" Filter="^pt$" Value="199" MixIn="fHwgK2xhbmd1YWdlczpecHQkfHx8fHxMYW5ndWFnZXxQb3J0dWd1ZXNl"/>
+			<Element Name="ru" Display="Russian" Link="Russian" Filter="^ru$" Value="277" MixIn="fHwgK2xhbmd1YWdlczpecnUkfHx8fHxMYW5ndWFnZXxSdXNzaWFu"/>
+			<Element Name="zh-simplified" Display="Simplified Chinese" Link="Simplified Chinese" Filter="^zh-simplified$" Value="2251" MixIn="fHwgK2xhbmd1YWdlczpeemgtc2ltcGxpZmllZCR8fHx8fExhbmd1YWdlfFNpbXBsaWZpZWQgQ2hpbmVzZQ=="/>
+			<Element Name="sk" Display="Slovak" Link="Slovak" Filter="^sk$" Value="104" MixIn="fHwgK2xhbmd1YWdlczpec2skfHx8fHxMYW5ndWFnZXxTbG92YWs="/>
+			<Element Name="es" Display="Spanish" Link="Spanish" Filter="^es$" Value="4681" MixIn="fHwgK2xhbmd1YWdlczpeZXMkfHx8fHxMYW5ndWFnZXxTcGFuaXNo"/>
+			<Element Name="sv" Display="Swedish" Link="Swedish" Filter="^sv$" Value="247" MixIn="fHwgK2xhbmd1YWdlczpec3YkfHx8fHxMYW5ndWFnZXxTd2VkaXNo"/>
+			<Element Name="zh-traditional" Display="Traditional Chinese" Link="Traditional Chinese" Filter="^zh-traditional$" Value="1775" MixIn="fHwgK2xhbmd1YWdlczpeemgtdHJhZGl0aW9uYWwkfHx8fHxMYW5ndWFnZXxUcmFkaXRpb25hbCBDaGluZXNl"/>
+			<Element Name="tr" Display="Turkish" Link="Turkish" Filter="^tr$" Value="936" MixIn="fHwgK2xhbmd1YWdlczpedHIkfHx8fHxMYW5ndWFnZXxUdXJraXNo"/>
+			<Element Name="unknown" Display="Unknown" Link="Unknown" Filter="^unknown$" Value="180" MixIn="fHwgK2xhbmd1YWdlczpedW5rbm93biR8fHx8fExhbmd1YWdlfFVua25vd24="/>
+		</Navigator>
+	</Engine>
+</ResultSet>

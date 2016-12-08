@@ -1,0 +1,356 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/**************************************** content styles (IE only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-02-17 14:20:41 +0100 (Mi, 17 Feb 2010) $ *****/
+/***********************************************************************/
+
+/* devel note:
+
+expression(previousSibling ? "value-1" : "value-2") is a workaround for the missing first-value pseudo class in IE<7
+	value-1 is the standard value, value-2 the first value
+
+*/
+
+/************************************************************************/
+/*START: grid*/
+
+* html div#fluid-zone
+{
+	width: 324px;
+	w\idth: 300px;
+}
+
+* html div#header-zone
+{
+	width: 962px; /*max-width when js is disabled*/
+}
+
+* html body.page-type-1 div#fluid-zone
+{
+	width: 600px;
+	w\idth: 418px;
+}
+
+* html body.page-type-content div.sifr-header h2
+{
+	margin: -1px 0 12px 0; /* adjustment due to different line-height rendering */
+}
+
+* html div#toolbar-zone
+{
+	width: 940px; /*max-width when js is disabled*/
+	height: 22px;
+	he\ight: 21px;
+}
+
+* html div.toolbar-layer div.close
+{
+	height: 21px;
+	he\ight: 20px;
+}
+
+* html div#site-explorer-layer div.close
+{
+	height: 21px;
+	he\ight: 20px;
+}
+
+* html div#site-id-layer div.close
+{
+	height: 21px;
+	he\ight: 20px;
+	right: -1px;
+}
+
+* html input#site-search-input
+{
+	height: 16px;
+	he\ight: auto;
+	width: 157px;
+	w\idth: 147px;
+}
+
+fieldset#site-search table
+{
+	position: relative;
+	top: -1px;
+}
+
+* html div#content-zone
+{
+	width: 960px;
+}
+
+* html div.column
+{
+	width: 320px;
+	w\idth: 276px;
+}
+
+* html div.wide-column
+{
+	width: 502px;
+	w\idth: 458px;
+}
+
+* html body.page-type-entry div.left-content div.column
+{
+	width: 234px;
+	w\idth: 190px;
+}
+
+* body.page-type-entry div.right-content div.column
+{
+	display: inline;
+}
+
+* html body.page-type-entry div.wide-column
+{
+	width: 468px;
+	w\idth: 424px;
+}
+
+* html div.hruler
+{
+	overflow: hidden;
+}
+
+* html div.content-layer-2
+{
+	overflow: hidden; /* fix position bug */
+}
+
+* html div.content-layer-2 div.close
+{
+	right: -1px; /* fix position bug */
+}
+
+* html div.content-layer-2 div.close a
+{
+	width: 1px;
+	border-right: 1px solid #fff; /* fix position bug */
+}
+
+/* content tabs */
+* html ul.tab-nav li
+{
+	margin: expression(previousSibling ? "0 0 0 2px" : "0");
+}
+
+* html div#footer-zone
+{
+	border-right: 916px solid #fff;
+	height: 44px;
+	he\ight: 16px;
+}
+
+* html div.min-width
+{
+	position: relative;
+	float: left;
+	margin-right: -916px;
+}
+
+/*END: grid*/
+/************************************************************************/
+/*START: language selector*/
+
+* html ul#language-list
+{
+	width: 167px;
+	w\idth: 144px;
+}
+
+* html ul#language-list li
+{ /* for IE5.5, IE6 don't worry about it */
+	clear: left;
+	float: left;
+}
+
+/*END: language selector*/
+/************************************************************************/
+/*START: site explorer*/
+
+* html div#site-explorer-layer
+{
+	width: 324px;
+	w\idth: 321px;
+}
+
+* html div#site-explorer-layer li a
+{
+	height: 1%;
+}
+
+* html div#site-explorer-layer li span.active
+{
+	height: 1%;
+}
+
+/*END: site explorer*/
+/************************************************************************/
+/*START: site id layer*/
+
+* html p#site-id
+{
+	display: inline;
+}
+
+* html div#site-id-layer
+{
+	width: 942px;
+	w\idth: 939px;
+}
+
+* html ul.worldwide
+{
+	width: 276px;
+}
+
+* html ul.countries li
+{
+	margin-top: expression(previousSibling ? "3px" : "0");
+}
+
+/*language specific styles */
+* html .zht
+{
+	vertical-align: middle;
+}
+
+/*END: site id layer*/
+/************************************************************************/
+/*START: buttons*/
+* html div.select-button-bar
+{
+	height: 20px;
+	overflow: hidden;
+}
+
+button.generic
+{
+	height: 1.455em;
+	overflow: visible;
+}
+
+/*END: buttons*/
+/************************************************************************/
+/*START: sifr*/
+
+.sIFR-hasFlash div.link-list ul.link li
+{
+	padd\ing: 1px 0 3px 11px;
+}
+
+* html .sIFR-hasFlash div.link-list ul.link
+{
+	position: relative;
+	zoom: 1;
+}
+/*END: sifr*/
+/************************************************************************/
+/*START: optional break in links*/
+
+span.wbr /*hide zero width space for optional break*/
+{
+	width: 0;
+	visibility: hidden;
+	display: inline-block;
+	overflow: hidden;
+	max-height: 0; /*only for IE 7*/
+}
+
+/*END: optional break in links*/
+/************************************************************************/
+/*START: breadcrumb*/
+
+* html dl#breadcrumb a
+{
+	float: left;
+}
+/*END: breadcrumb*/
+/************************************************************************/
+/*START: fix ie6 site-identifier active language background */
+
+* html div#site-id-layer div.cols div.col-1,
+{
+	width: 280px;
+}
+
+* html div#site-id-layer div.cols div.col-2
+{
+	margin-left: 40px;
+	width: 280px;
+}
+
+* html div#site-id-layer div.cols div.col-3
+{
+	margin-left: 40px;
+	width: 280px;
+}
+
+* html div#site-id-layer div.toolbar-content
+{
+	padding-left: 5px;
+}
+
+* html div#site-id-layer div.toolbar-content p.subhead
+{
+	margin-left: 4px;
+}
+
+* html div#site-id-layer div.toolbar-content ul.countries li
+{
+	margin-left: 0;
+}
+
+* html div#site-id-layer div.toolbar-content div.hruler
+{
+	margin-left: 4px;
+}
+
+/*END: fix ie6 site-identifiere active language background */
+/************************************************************************/
+/*START: fix for text-cursor bug, IE7 only , see also: module/search/specific-ie.css line: 54 */
+
+*+html body
+{
+	cursor: default;
+}
+
+*+html div#content-zone
+{
+	cursor: auto;
+}
+
+*+html div#content-zone /* IE7 only bugfix for text-cursor bug */
+{
+	background-color: #fff;
+}
+
+/*END: fix for text-cursor bug, IE7 only */
+/************************************************************************/
+/* START: lists */
+
+* html div.teaser ul,
+* html ul.bullet-list,
+* html ul.download-list
+{
+	zoom: 1;
+	position: relative;
+}
+
+* html div.column
+{
+	zoom: 1;
+}
+
+* html div.link-lists ul.link
+{
+	float: left;
+}
+/* END: lists */
+/***********************************************************************/

@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CDFD8CB-BBDB-448B-AE16-5BD8366C14BC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CHub</RootNamespace>
+    <AssemblyName>CHub</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelPackage, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f8bb63aa9d6969e8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExcelPackage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountDefault.aspx" />
+    <Content Include="AccountDetail.aspx" />
+    <Content Include="AccountOperation.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Document\Email\FindPassword.htm" />
+    <Content Include="Document\Excel\Excels.xml" />
+    <Content Include="Document\Excel\test.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Document\Export\Export.htm" />
+    <Content Include="Document\Export\ExportProductList.htm" />
+    <Content Include="DriveOptionsDefault.aspx" />
+    <Content Include="DriveOptionsDetail.aspx" />
+    <Content Include="DriveOptionsImport.aspx" />
+    <Content Include="DriveOptionsOperation.aspx" />
+    <Content Include="FileDownload.aspx" />
+    <Content Include="HistoryQuotationDefault.aspx" />
+    <Content Include="HistoryQuotationDetail.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="js\jquery-1.8.0.js" />
+    <Content Include="js\jquery.handsontable.full.css" />
+    <Content Include="js\jquery.handsontable.full.js" />
+    <Content Include="KPOperation.aspx" />
+    <Content Include="OptionsDefault.aspx" />
+    <Content Include="OptionsDetail.aspx" />
+    <Content Include="OptionsImport.aspx" />
+    <Content Include="OptionsOperation.aspx" />
+    <Content Include="ProductQuotationDriveSaveJson.aspx" />
+    <Content Include="ProductQuotationSaveJson.aspx" />
+    <Content Include="ProductsQuotation.aspx" />
+    <Content Include="QuickOrderEntry.aspx" />
+    <Content Include="OrderDefault.aspx" />
+    <Content Include="OrderEntryDetail.aspx" />
+    <Content Include="SPRImport.aspx" />
+    <Content Include="OrderEntry.aspx" />
+    <Content Include="UI\CSS\Style.css" />
+    <Content Include="UI\Images\09r003.gif" />
+    <Content Include="UI\Images\09r005.gif" />
+    <Content Include="UI\Images\1pixes.gif" />
+    <Content Include="UI\Images\arrow_red.gif" />
+    <Content Include="UI\Images\Example1.gif" />
+    <Content Include="UI\Images\Example2.gif" />
+    <Content Include="UI\Images\idio_DateTimePickerNextMonth.gif" />
+    <Content Include="UI\Images\idio_DateTimePickerPrevMonth.gif" />
+    <Content Include="UI\Images\idio_DateTimePickerTitlebackground.gif" />
+    <Content Include="UI\Images\index_Error.gif" />
+    <Content Include="UI\Images\lineprogressbar.gif" />
+    <Content Include="UI\Images\lineprogressbar_1.gif" />
+    <Content Include="UI\Images\search.gif" />
+    <Content Include="UI\Images\selectcell.png" />
+    <Content Include="UI\Images\selectwindow.gif" />
+    <Content Include="Web.config" />
+    <Content Include="Y70Index.aspx" />
+    <Content Include="_assets\headervisual-196px.jpg" />
+    <Content Include="_resources\css\core\content.css" />
+    <Content Include="_resources\css\core\grid.css" />
+    <Content Include="_resources\css\core\img\body-alternative.gif" />
+    <Content Include="_resources\css\core\img\body.gif" />
+    <Content Include="_resources\css\core\img\bullet.gif" />
+    <Content Include="_resources\css\core\img\dotted-separator-narrow.gif" />
+    <Content Include="_resources\css\core\img\generic-button.gif" />
+    <Content Include="_resources\css\core\img\icon-anchor-link.gif" />
+    <Content Include="_resources\css\core\img\icon-bookmark.gif" />
+    <Content Include="_resources\css\core\img\icon-close.gif" />
+    <Content Include="_resources\css\core\img\icon-doc.gif" />
+    <Content Include="_resources\css\core\img\icon-email.gif" />
+    <Content Include="_resources\css\core\img\icon-file.gif" />
+    <Content Include="_resources\css\core\img\icon-folder-collapsed.gif" />
+    <Content Include="_resources\css\core\img\icon-folder-expanded.gif" />
+    <Content Include="_resources\css\core\img\icon-gif.gif" />
+    <Content Include="_resources\css\core\img\icon-htm.gif" />
+    <Content Include="_resources\css\core\img\icon-image.gif" />
+    <Content Include="_resources\css\core\img\icon-jpg.gif" />
+    <Content Include="_resources\css\core\img\icon-lb-layer-close.gif" />
+    <Content Include="_resources\css\core\img\icon-link-ext.gif" />
+    <Content Include="_resources\css\core\img\icon-link.gif" />
+    <Content Include="_resources\css\core\img\icon-movie.gif" />
+    <Content Include="_resources\css\core\img\icon-pdf.gif" />
+    <Content Include="_resources\css\core\img\icon-ppt.gif" />
+    <Content Include="_resources\css\core\img\icon-print.gif" />
+    <Content Include="_resources\css\core\img\icon-simple-layer-close.gif" />
+    <Content Include="_resources\css\core\img\icon-sound.gif" />
+    <Content Include="_resources\css\core\img\icon-tb-layer-close.gif" />
+    <Content Include="_resources\css\core\img\icon-tif.gif" />
+    <Content Include="_resources\css\core\img\icon-xls.gif" />
+    <Content Include="_resources\css\core\img\icon-zip.gif" />
+    <Content Include="_resources\css\core\img\logo.gif" />
+    <Content Include="_resources\css\core\img\right-entry-border.gif" />
+    <Content Include="_resources\css\core\img\si-country-sprite.gif" />
+    <Content Include="_resources\css\core\img\si-mobile.gif" />
+    <Content Include="_resources\css\core\img\si-worldwide.gif" />
+    <Content Include="_resources\css\core\img\tab-nav-li-active.gif" />
+    <Content Include="_resources\css\core\img\tab-nav-li.gif" />
+    <Content Include="_resources\css\core\img\tab-nav-ul.gif" />
+    <Content Include="_resources\css\core\initial.css" />
+    <Content Include="_resources\css\core\navigation-larger.css" />
+    <Content Include="_resources\css\core\navigation-largest.css" />
+    <Content Include="_resources\css\core\navigation.css" />
+    <Content Include="_resources\css\core\sifr.css" />
+    <Content Include="_resources\css\core\specific-ie.css" />
+    <Content Include="_resources\css\core\specific-macos.css" />
+    <Content Include="_resources\css\core\specific-webkit.css" />
+    <Content Include="_resources\css\ctc-styles-ie.css" />
+    <Content Include="_resources\css\ctc.css" />
+    <Content Include="_resources\css\fontsize-larger.css" />
+    <Content Include="_resources\css\fontsize-largest.css" />
+    <Content Include="_resources\css\module\breadcrumb-mouseover\breadcrumb-mouseover.css" />
+    <Content Include="_resources\css\module\breadcrumb-mouseover\img\blank.gif" />
+    <Content Include="_resources\css\module\breadcrumb-mouseover\specific-ie.css" />
+    <Content Include="_resources\css\module\ctc\ctc-larger.css" />
+    <Content Include="_resources\css\module\ctc\ctc-largest.css" />
+    <Content Include="_resources\css\module\ctc\ctc.css" />
+    <Content Include="_resources\css\module\ctc\img\bullet.gif" />
+    <Content Include="_resources\css\module\ctc\img\dotted-separator-narrow.gif" />
+    <Content Include="_resources\css\module\ctc\img\dotted-separator.gif" />
+    <Content Include="_resources\css\module\ctc\img\icon-share-email.gif" />
+    <Content Include="_resources\css\module\ctc\img\icon-toplink.gif" />
+    <Content Include="_resources\css\module\ctc\img\icons-share.gif" />
+    <Content Include="_resources\css\module\ctc\img\image-close.gif" />
+    <Content Include="_resources\css\module\ctc\img\magnifier.gif" />
+    <Content Include="_resources\css\module\ctc\img\pagetools.gif" />
+    <Content Include="_resources\css\module\ctc\sifr.css" />
+    <Content Include="_resources\css\module\ctc\specific-ie.css" />
+    <Content Include="_resources\css\module\ctc\specific-macos.css" />
+    <Content Include="_resources\css\module\ctc\specific-webkit.css" />
+    <Content Include="_resources\css\module\example\example.css" />
+    <Content Include="_resources\css\module\example\img\dotted-separator.gif" />
+    <Content Include="_resources\css\module\example\specific-ie.css" />
+    <Content Include="_resources\css\module\example\specific-macos.css" />
+    <Content Include="_resources\css\module\example\specific-webkit.css" />
+    <Content Include="_resources\css\module\example\_README.txt" />
+    <Content Include="_resources\css\module\search\content.css" />
+    <Content Include="_resources\css\module\search\grid.css" />
+    <Content Include="_resources\css\module\search\img\bg_dotted.gif" />
+    <Content Include="_resources\css\module\search\img\bullet.gif" />
+    <Content Include="_resources\css\module\search\img\gui-select-arrow-down.gif" />
+    <Content Include="_resources\css\module\search\img\gui-select-arrow-up.gif" />
+    <Content Include="_resources\css\module\search\img\gui-select-handle-inactive.gif" />
+    <Content Include="_resources\css\module\search\img\gui-select-handle.gif" />
+    <Content Include="_resources\css\module\search\img\gui-select-hr.gif" />
+    <Content Include="_resources\css\module\search\img\icon-backlink.gif" />
+    <Content Include="_resources\css\module\search\img\icon-help.gif" />
+    <Content Include="_resources\css\module\search\img\icons-paging.gif" />
+    <Content Include="_resources\css\module\search\img\tab-nav-li-active.gif" />
+    <Content Include="_resources\css\module\search\img\tab-nav-li.gif" />
+    <Content Include="_resources\css\module\search\img\tab-nav-ul.gif" />
+    <Content Include="_resources\css\module\search\print.css" />
+    <Content Include="_resources\css\module\search\specific-ie.css" />
+    <Content Include="_resources\css\module\search\specific-macos.css" />
+    <Content Include="_resources\css\module\search\specific-webkit.css" />
+    <Content Include="_resources\css\print.css" />
+    <Content Include="_resources\css\search-styles-ie.css" />
+    <Content Include="_resources\css\search.css" />
+    <Content Include="_resources\css\styles-ie.css" />
+    <Content Include="_resources\css\styles-macos.css" />
+    <Content Include="_resources\css\styles-webkit.css" />
+    <Content Include="_resources\css\styles.css" />
+    <Content Include="_resources\img\bg-header.png" />
+    <Content Include="_resources\img\cummins%2520logo-large%2520-black.png" />
+    <Content Include="_resources\img\cummins-logo-print.gif" />
+    <Content Include="_resources\img\Cummins.png" />
+    <Content Include="_resources\img\tb-contact-en.gif" />
+    <Content Include="_resources\img\tb-deutsch.gif" />
+    <Content Include="_resources\img\tb-forum-en.gif" />
+    <Content Include="_resources\img\tb-language-en.gif" />
+    <Content Include="_resources\img\tb-service-en.gif" />
+    <Content Include="_resources\img\tb-site-id-energy-usa.gif" />
+    <Content Include="_resources\img\tb-site-id-global.gif" />
+    <Content Include="_resources\img\tb-site-id-usa.gif" />
+    <Content Include="_resources\img\tb-sitemap-en.gif" />
+    <Content Include="_resources\js\compatibility\autocompletelayer.js" />
+    <Content Include="_resources\js\compatibility\builder.js" />
+    <Content Include="_resources\js\compatibility\event-ondomready.js" />
+    <Content Include="_resources\js\compatibility\location.js" />
+    <Content Include="_resources\js\compatibility\popup.js" />
+    <Content Include="_resources\js\compatibility\position-getwindowsize.js" />
+    <Content Include="_resources\js\compiled\script.js" />
+    <Content Include="_resources\js\compiled\script.js.min.js" />
+    <Content Include="_resources\js\compiled\script.search.js" />
+    <Content Include="_resources\js\compiled\script.search.js.min.js" />
+    <Content Include="_resources\js\compiled\_README.txt" />
+    <Content Include="_resources\js\example\active-filter-get-content.js" />
+    <Content Include="_resources\js\example\example-core.js" />
+    <Content Include="_resources\js\example\siteexplorer-get-content.js" />
+    <Content Include="_resources\js\example\suggestions-get-content.js" />
+    <Content Include="_resources\js\init.js" />
+    <Content Include="_resources\js\init.search.js" />
+    <Content Include="_resources\js\lib\common.js" />
+    <Content Include="_resources\js\lib\core.js" />
+    <Content Include="_resources\js\lib\module.autocomplete.js" />
+    <Content Include="_resources\js\lib\module.breadcrumb.js" />
+    <Content Include="_resources\js\lib\module.fontsize.js" />
+    <Content Include="_resources\js\lib\module.gui.select.js" />
+    <Content Include="_resources\js\lib\module.header-visual.js" />
+    <Content Include="_resources\js\lib\module.language-selector.js" />
+    <Content Include="_resources\js\lib\module.lightbox-layer.js" />
+    <Content Include="_resources\js\lib\module.magnifier.js" />
+    <Content Include="_resources\js\lib\module.mousewheel-observer.js" />
+    <Content Include="_resources\js\lib\module.search.js" />
+    <Content Include="_resources\js\lib\module.social-bookmarker.js" />
+    <Content Include="_resources\js\lib\prototype.js" />
+    <Content Include="_resources\js\lib\scriptaculous.slider.js" />
+    <Content Include="_resources\sifr\siemensslab.swf" />
+    <Content Include="_resources\sifr\_IMPORTANT_NOTICE.txt" />
+    <Content Include="_resources\xml\autocomplete-data.xml" />
+    <Content Include="_resources\xml\language-filter-data.xml" />
+    <Content Include="_resources\xsl\render-active-filter.xsl" />
+    <Content Include="_resources\xsl\render-autocomplete-layer.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountDefault.aspx.cs">
+      <DependentUpon>AccountDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountDefault.aspx.designer.cs">
+      <DependentUpon>AccountDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountDetail.aspx.cs">
+      <DependentUpon>AccountDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountDetail.aspx.designer.cs">
+      <DependentUpon>AccountDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountOperation.aspx.cs">
+      <DependentUpon>AccountOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountOperation.aspx.designer.cs">
+      <DependentUpon>AccountOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassLibrary\CalculateExpression.cs" />
+    <Compile Include="ClassLibrary\clsUserDuty.cs" />
+    <Compile Include="ClassLibrary\DriveProductRowData.cs" />
+    <Compile Include="ClassLibrary\DriveProductRowItem.cs" />
+    <Compile Include="ClassLibrary\Page.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassLibrary\ProductRowData.cs" />
+    <Compile Include="ClassLibrary\ProductRowItem.cs" />
+    <Compile Include="ClassLibrary\UserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\SearchGridList.ascx.cs">
+      <DependentUpon>SearchGridList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\SearchGridList.ascx.designer.cs">
+      <DependentUpon>SearchGridList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlLibrary\TreeViewEx.ascx.cs">
+      <DependentUpon>TreeViewEx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlLibrary\TreeViewEx.ascx.designer.cs">
+      <DependentUpon>TreeViewEx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DriveOptionsDefault.aspx.cs">
+      <DependentUpon>DriveOptionsDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DriveOptionsDefault.aspx.designer.cs">
+      <DependentUpon>DriveOptionsDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DriveOptionsDetail.aspx.cs">
+      <DependentUpon>DriveOptionsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DriveOptionsDetail.aspx.designer.cs">
+      <DependentUpon>DriveOptionsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DriveOptionsImport.aspx.cs">
+      <DependentUpon>DriveOptionsImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DriveOptionsImport.aspx.designer.cs">
+      <DependentUpon>DriveOptionsImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DriveOptionsOperation.aspx.cs">
+      <DependentUpon>DriveOptionsOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DriveOptionsOperation.aspx.designer.cs">
+      <DependentUpon>DriveOptionsOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDownload.aspx.cs">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDownload.aspx.designer.cs">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryQuotationDefault.aspx.cs">
+      <DependentUpon>HistoryQuotationDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoryQuotationDefault.aspx.designer.cs">
+      <DependentUpon>HistoryQuotationDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryQuotationDetail.aspx.cs">
+      <DependentUpon>HistoryQuotationDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistoryQuotationDetail.aspx.designer.cs">
+      <DependentUpon>HistoryQuotationDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KPOperation.aspx.cs">
+      <DependentUpon>KPOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KPOperation.aspx.designer.cs">
+      <DependentUpon>KPOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsDefault.aspx.cs">
+      <DependentUpon>OptionsDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OptionsDefault.aspx.designer.cs">
+      <DependentUpon>OptionsDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsDetail.aspx.cs">
+      <DependentUpon>OptionsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OptionsDetail.aspx.designer.cs">
+      <DependentUpon>OptionsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsImport.aspx.cs">
+      <DependentUpon>OptionsImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OptionsImport.aspx.designer.cs">
+      <DependentUpon>OptionsImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsOperation.aspx.cs">
+      <DependentUpon>OptionsOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OptionsOperation.aspx.designer.cs">
+      <DependentUpon>OptionsOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductQuotationDriveSaveJson.aspx.cs">
+      <DependentUpon>ProductQuotationDriveSaveJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductQuotationDriveSaveJson.aspx.designer.cs">
+      <DependentUpon>ProductQuotationDriveSaveJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductQuotationSaveJson.aspx.cs">
+      <DependentUpon>ProductQuotationSaveJson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductQuotationSaveJson.aspx.designer.cs">
+      <DependentUpon>ProductQuotationSaveJson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsQuotation.aspx.cs">
+      <DependentUpon>ProductsQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsQuotation.aspx.designer.cs">
+      <DependentUpon>ProductsQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuickOrderEntry.aspx.cs">
+      <DependentUpon>QuickOrderEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuickOrderEntry.aspx.designer.cs">
+      <DependentUpon>QuickOrderEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ExitSystem.aspx.cs">
+      <DependentUpon>ExitSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExitSystem.aspx.designer.cs">
+      <DependentUpon>ExitSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyInformation.aspx.cs">
+      <DependentUpon>MyInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyInformation.aspx.designer.cs">
+      <DependentUpon>MyInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDefault.aspx.cs">
+      <DependentUpon>OrderDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDefault.aspx.designer.cs">
+      <DependentUpon>OrderDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderEntryDetail.aspx.cs">
+      <DependentUpon>OrderEntryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderEntryDetail.aspx.designer.cs">
+      <DependentUpon>OrderEntryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPRImport.aspx.cs">
+      <DependentUpon>SPRImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SPRImport.aspx.designer.cs">
+      <DependentUpon>SPRImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderEntry.aspx.cs">
+      <DependentUpon>OrderEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderEntry.aspx.designer.cs">
+      <DependentUpon>OrderEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Y70Index.aspx.cs">
+      <DependentUpon>Y70Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Y70Index.aspx.designer.cs">
+      <DependentUpon>Y70Index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlLibrary\SearchGridList.ascx" />
+    <Content Include="ControlLibrary\TreeViewEx.ascx" />
+    <Content Include="Main.Master" />
+    <Content Include="ExitSystem.aspx" />
+    <Content Include="MyInformation.aspx" />
+    <Content Include="UI\Js\TreeViewEx.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IdioSoft.ClassCommon\IdioSoft.ClassCommon.csproj">
+      <Project>{AFEEA59A-EA97-4A1C-88C7-2416D7EEE07A}</Project>
+      <Name>IdioSoft.ClassCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IdioSoft.ClassDbAccess\IdioSoft.ClassDbAccess.csproj">
+      <Project>{726A1117-739F-4394-AD8B-04460E6C4DA7}</Project>
+      <Name>IdioSoft.ClassDbAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IdioSoft.CustomPageEx\IdioSoft.CustomPageEx.csproj">
+      <Project>{88A30EDB-6872-4757-943D-5226ACD8CB19}</Project>
+      <Name>IdioSoft.CustomPageEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IdioSoft.DateTimePicker\IdioSoft.DateTimePicker.csproj">
+      <Project>{4B95FB97-4D88-4686-A018-B6E497963E9D}</Project>
+      <Name>IdioSoft.DateTimePicker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IdioSoft.ExportExcel\IdioSoft.ExportExcel.csproj">
+      <Project>{7AF3D127-8B23-4482-92C0-CDEDA76B2642}</Project>
+      <Name>IdioSoft.ExportExcel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IdioSoft.Public\IdioSoft.Public.csproj">
+      <Project>{AE3067EC-3C3E-4319-8049-71F52AFBB755}</Project>
+      <Name>IdioSoft.Public</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Document\Excel\Options.xlsx" />
+    <None Include="Document\Excel\SPR.xlsx" />
+    <Content Include="Document\Export\Template of Gross Margin Calculation sheet_2013.xls" />
+    <None Include="Properties\PublishProfiles\LD_BUPT.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Temp\DriveOptions\" />
+    <Folder Include="Temp\ExcelExport\" />
+    <Folder Include="Temp\Options\" />
+    <Folder Include="Temp\SPR\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4856</DevelopmentServerPort>
+          <DevelopmentServerVPath>/LDBUPT/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4856/CHub/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

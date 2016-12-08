@@ -1,0 +1,949 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+<title>Untitled Document</title>
+    <style type="text/css">
+        body, td, th
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+        }
+        body
+        {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+    .FontRed {
+	color: #F00;
+	font-weight: bold;
+}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:常规;
+	mso-style-id:0;}
+
+.xl39
+	{mso-style-parent:style0;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	white-space:normal;}
+.xl43
+	{mso-style-parent:style0;
+	mso-font-charset:0;
+	mso-number-format:Standard;
+	background:silver;
+	mso-pattern:auto none;
+	white-space:normal;}
+    .Font14Bold {
+	font-size: 14px;
+	font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <table border="0" cellspacing="1" cellpadding="2">
+        <tr>
+            <td colspan="3">
+            <span class="Font14Bold">LD-Pre-Calculation Sheet</span></td>
+            <td colspan="6">
+                <span class="Font14Bold">Stanrdard motors</span>
+            </td>
+            <td align="right">
+                Valid Date:
+            </td>
+        </tr>
+        <tr>
+            <td width="39">&nbsp;
+                
+            </td>
+            <td width="199">&nbsp;
+                
+            </td>
+            <td width="151">&nbsp;
+                
+            </td>
+            <td width="159">&nbsp;
+                
+            </td>
+            <td width="139">&nbsp;
+                
+            </td>
+            <td width="79">&nbsp;</td>
+            <td width="195">&nbsp;
+                
+            </td>
+            <td width="15">&nbsp;
+                
+            </td>
+            <td width="116">&nbsp;
+                
+            </td>
+            <td width="139">&nbsp;
+                
+            </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>Project Name: </strong></td>
+          <td>@Project@&nbsp; </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td colspan="2"><strong>Payment Terms </strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>*Channel Name</strong>
+          (Direct Contractor with Cummins):</td>
+          <td bgcolor="#CCCCCC">@Channel@&nbsp; </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td><strong>Delivery Time:</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>*OEM or End-user Name:</strong></td>
+          <td bgcolor="#CCCCCC">@Customer@&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td colspan="2"><strong>Delivery Terms:</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>*Quotation No.: </strong></td>
+          <td bgcolor="#CCCCCC">@QuotationNo@</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td><strong>Warranty:</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>*Quotation Date: </strong></td>
+          <td bgcolor="#CCCCCC">@QuotationDate@&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td colspan="4"><strong class="FontRed">In the scope of special benefit if GM&lt;5%</strong></td>
+          <td><span class="FontRed">=IF(G37<0.05,"yes","no")</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>Business type:</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td colspan="2"><strong>Sales Region:</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>@SalesRegion@&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>BU Responsible:</strong></td>
+          <td>@BUResponsible@&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td colspan="2"><strong>Sales Person:</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;"><strong>DESCRIPTION</strong></td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;"><strong>%</strong></td>
+          <td style="border-top: .5pt solid #000;"><strong>CUR</strong></td>
+          <td style="border-top: .5pt solid #000;"><strong>1st PRE CAL.</strong></td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;"><strong>2nd PRE CAL.</strong></td>
+          <td style="border-top: .5pt solid #000;"><strong>Variance RMB</strong></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;"><strong>RMB</strong></td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;"><strong>RMB</strong></td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;" nowrap="nowrap"><strong>SALES PRICE EXTERNAL CUSTOMERS(excl.VAT)</strong></td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;"><strong>RMB</strong></td>
+          <td bgcolor="#CCCCCC" style="border-top: .5pt solid #000;" class=xl43 align=right x:num>@TotalKP@</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td bgcolor="#CCCCCC" style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">Sales price incl.VAT</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">17.0%</td>
+          <td style="border-bottom: .5pt solid #000;">RMB</td>
+          <td bgcolor="#CCCCCC" style="border-bottom: .5pt solid #000;" class=xl43 align=right x:num>=G15*1.17</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td bgcolor="#CCCCCC" style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>Local purchase from OC </strong></td>
+          <td>&nbsp;</td>
+          <td nowrap="nowrap">Select OC&gt;&gt;&gt;</td>
+          <td><strong>SSML</strong></td>
+          <td><strong>RMB</strong></td>
+          <td bgcolor="#CCCCCC" class=xl43 align=right x:num><strong>@TotalTP@</strong></td>
+          <td>&nbsp;</td>
+          <td bgcolor="#CCCCCC">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>3rd party purchase</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>International freight&amp;insurance</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Customer duty&amp;clearance</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Domestic feight/insurance%warehouseing(DDP)</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Installation/Service charges</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Project management</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Customer training</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>Financial cost</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>1.0%</td>
+          <td>RMB</td>
+          <td bgcolor="#CCCCCC" class=xl43 align=right x:num>=G15*E26</td>
+          <td>&nbsp;</td>
+          <td bgcolor="#CCCCCC">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Miscellaneous</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;"><strong>TOTAL cost w/o PROVISION</strong></td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;"><strong>RMB</strong></td>
+          <td bgcolor="#CCCCCC" style="border-bottom: .5pt solid #000;" class=xl43 align=right x:num>=SUM(G18:G27)</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Warrant</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Goodwill</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Contingency</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">TOTAL cost with PROVISION</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">RMB</td>
+          <td bgcolor="#CCCCCC" style="border-bottom: .5pt solid #000;" class=xl43 align=right x:num>=G28</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">SG&amp;A</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">8.0%</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">RMB</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;" class=xl43 align=right x:num>=G15*E34</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000; border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">Gross Margin (before recovering SG&amp;A cost)</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">RMB</td>
+          <td bgcolor="#CCCCCC" style="border-top: .5pt solid #000;" class=xl43 align=right x:num>=G15-G28</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td bgcolor="#CCCCCC" style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><strong>Gross Margin (before recovering SG&amp;A cost) %</strong></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td class=xl39 align=right x:num>=G36/G15</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>Net profit (after recovering SG&amp;A)</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>RMB</td>
+          <td bgcolor="#CCCCCC" class=xl43 align=right x:num>=G36-G34</td>
+          <td>&nbsp;</td>
+          <td bgcolor="#CCCCCC">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;"><strong>Net profit (after recovering SG&amp;A) %</strong></td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;" class=xl39 align=right x:num>=G38/G15</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-top: .5pt solid #000;" colspan="2">REMARKS:</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="10">1.Pre-calculation sheet should be issued before sending quotations to customers.</td>
+        </tr>
+        <tr>
+          <td colspan="10">2. Explanation for low GM%:</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-top: .5pt solid #000;" colspan="2">Signatures with date:</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+          <td style="border-top: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right">Issuer</td>
+          <td>&nbsp;</td>
+          <td colspan="2" align="right">BU GM</td>
+          <td>&nbsp;</td>
+          <td colspan="2" align="right">BU CM</td>
+          <td>&nbsp;</td>
+          <td align="right">Division Head</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right">Division FO</td>
+          <td>&nbsp;</td>
+          <td colspan="2" align="right">Sector Head</td>
+          <td>&nbsp;</td>
+          <td colspan="2" align="right">Sector FO</td>
+          <td>&nbsp;</td>
+          <td align="right">SCL</td>
+        </tr>
+        <tr>
+          <td height="20">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-bottom: .5pt solid #000;"><strong>Signature Mandate</strong></td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+          <td style="border-bottom: .5pt solid #000;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">3.1.3 Margin Control</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>Level 0</td>
+          <td>Level 1</td>
+          <td>&nbsp;</td>
+          <td nowrap="nowrap">Level 2</td>
+          <td>Level 3</td>
+        </tr>
+        <tr>
+          <td colspan="2">Gross margin &gt;10% of total order value</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>T&amp;F</td>
+        </tr>
+        <tr>
+          <td colspan="2">Gross margin 5%-10% of total order value</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>T&amp;F</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2">Gross margin &lt;5% of total order value</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>T&amp;F</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="3">Gross margin &lt;0% of total order value and contract value &gt;RMB 10millo</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>SCL</td>
+          <td>T&amp;F</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="10" class="FontRed">Notes: 3.1.3 will be not applicable, if Business Group specific Pricing and Discount Policy is in place where the gross margin is within SLC corporate requirement.</td>
+        </tr>
+        <tr>
+          <td colspan="10"><br />
+Payment Terms 付款方式： 30%-70%<br />
+Delivery Time(Ex-work) 发货期(出厂): _____ months after receiving down payment<br />
+Delivery Terms 发货方式: DDP ______<br />
+Warranty 质保期: 12 months after delivery<br />
+Quotation validation period 报价有效期: one month<br />
+<br />
+Unless otherwise stated in these terms and conditions, all other terms and conditions of  "General Terms and Conditions of Supplies and Services（Cummins China)" shall 
+
+apply.<br />
+除非另有规定，其他未尽事宜请参照适用于西门子中国的"供货与服务一般条件" 。</td>
+        </tr>
+    </table>
+</body>
+</html>

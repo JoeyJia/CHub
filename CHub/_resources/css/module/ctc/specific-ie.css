@@ -1,0 +1,91 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/******************************************** ctc styles (IE only) *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+
+* html div.image-wrapper
+{
+	padding-right: 9px;
+}
+
+* html div.separator
+{
+	padding-bottom: 15px;
+	padd\ing-bottom: 10px;
+	height: 21px;
+	he\ight: 11px;
+}
+
+/* with image-wrapper: */
+* html div.img-144
+{
+	width: 153px;
+	w\idth: 144px;
+}
+
+* html div.img-172
+{
+	width: 181px;
+	w\idth: 172px;
+}
+
+* html div.pagetools a.tools-fontsize-enlarge
+{
+	margin-right: 3px;
+}
+
+* html div.right-content ul.download-list li
+{
+	float: left;
+	width: 276px;
+}
+
+* html div.feature-content
+{
+	display: inline;
+}
+
+* html div.right-content div.content-navigation
+{
+	position: relative;
+}
+
+* html.js p.pagetools-functions span.pipe,
+* html div#pagetools-footer div.pagetools p,
+* html div#pagetools-footer-zone p.pagetools-fontsize
+{
+	display: inline;
+}
+
+* html div#pagetools-footer-zone p.pagetools-fontsize
+{
+	margin-right: -3px;
+}
+
+.sIFR-hasFlash div.right-content div.column
+{
+	padding-top: 11px;
+}
+
+.sIFR-hasFlash div.right-content div.content-navigation
+{
+	padding-top: 4px;
+}
+
+.sIFR-hasFlash div.right-content div.first-column
+{
+	padding-top: 3px;
+}
+
+.sIFR-hasFlash div.right-content div.first-column div.box
+{
+	margin-top: -1px;
+}
+
+.sIFR-hasFlash div.right-content p.summary
+{
+	padding-top: 0;
+}

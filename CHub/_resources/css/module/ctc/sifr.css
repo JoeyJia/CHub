@@ -1,0 +1,56 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************************** sifr styles for ctc styles *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-01-12 16:33:21 +0100 (Di, 12 Jan 2010) $ *****/
+
+.sIFR-hasFlash div.left-content div.sifr-h1
+{
+	margin: -1px 0 2px;
+}
+
+.sIFR-hasFlash div.left-content div.sifr-h1 h1
+{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	width: 458px; /*needed for all IEs*/
+}
+
+.sIFR-hasFlash div.left-content div.sifr-h2 h2
+{
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: normal;
+	color: #666;
+	width: 458px; /*needed for all IEs*/
+}
+
+.sIFR-hasFlash div.extra-wide-column div.sifr-h1 h1,
+.sIFR-hasFlash div.extra-wide-column div.sifr-h2 h2
+{
+	width: 596px; /*needed for all IEs*/
+}
+
+.sIFR-hasFlash div.headline
+{
+	margin: 0 0 8px 0;
+}
+
+.sIFR-hasFlash div.right-content div.sifr
+{
+	margin: 1px 0 -1px;
+}
+
+.sIFR-hasFlash div.tab-content-wrapper div.sifr-h2
+{
+	padding-top: 3px;
+}
+
+.sIFR-hasFlash div.ctc div.right-content div.hruler
+{
+	margin: 5px 0 11px;
+}
+

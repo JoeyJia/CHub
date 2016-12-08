@@ -1,0 +1,630 @@
+/****************************** Cummins' new web appearance layout *****/
+/****************************** Copyright (c) 2007-2010 Cummins AG *****/
+/***********************************************************************/
+/************************* grid stylesheet includes page framework *****/
+/***********************************************************************/
+/************************************** author virtual identity AG *****/
+/* $LastChangedDate: 2010-02-17 14:20:41 +0100 (Mi, 17 Feb 2010) $ *****/
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	background: #fff url(img/body.gif) repeat-x;
+}
+
+div#footer-position-wrapper
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -44px; /* the bottom margin is the negative value of the footer's height */
+}
+
+div#header-zone
+{
+	position: relative;
+	overflow: hidden;
+	/*max-width: 962px; */
+	min-width: 688px;
+	z-index: 101;
+}
+
+body.page-type-1 div#header-zone
+{
+	width: 962px;
+}
+
+body.page-type-entry div#header-zone
+{
+	background: url(img/right-entry-border.gif) repeat-y 987px 0;
+	max-width: 9999px;
+	width: 100%;
+}
+
+p#logo
+{
+	position: absolute;
+	top: 0;
+	left: 44px;
+	height: 72px;
+	width: 172px;
+	z-index: 300;
+	background: url(img/logo.gif) no-repeat;
+}
+
+p#logo a
+{
+	display: block;
+	height: 72px;
+	width: 172px;
+}
+
+div#headervisual-zone
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 638px;
+	z-index: 10;
+	/*background: #999 no-repeat;*/
+}
+
+div.swap-image-container
+{
+	background-repeat: no-repeat;
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 638px;
+	z-index: 11;
+}
+
+body.page-type-1 div#headervisual-zone,
+body.page-type-1 div.swap-image-container
+{
+	width: 362px;
+}
+
+body.page-type-entry div#headervisual-zone
+{
+	width: 987px;
+}
+
+div#fluid-zone
+{
+	/*background-color: #afb4be;*/
+	position: relative;
+	z-index: 11;
+	float: right;
+	padding: 0 0 0 22px;
+	/*border-left: 2px solid #fff;*/
+	width: 300px;
+}
+
+body.page-type-1 div#fluid-zone
+{
+	width: 418px;
+	padding: 0 76px 0 104px;
+}
+
+div#headertext-zone
+{
+	position: relative;
+}
+
+div#headertext-zone div.headertext-content
+{
+	left: 0;
+	overflow: hidden; /* for #toolbar-nav in safari2 */
+	position: absolute;
+	top: 0;
+}
+
+div#headertext-zone div.hidden-headertext-contents div.headertext-content
+{
+	left: -7000px;
+}
+
+div#headertext-zone div.hidden-headertext-contents div.active
+{
+	left: 0;
+}
+
+body.page-type-1 div#headertext-zone div.headertext-content
+{
+	top: 85px;
+	width: 418px;
+}
+
+body.page-type-2 div#headertext-zone div.headertext-content
+{
+	top: 85px;
+}
+
+body.page-type-3 div#headertext-zone div.headertext-content
+{
+	top: 85px;
+}
+
+body.page-type-content div#headertext-zone div.headertext-content
+{
+	top: 68px;
+}
+
+div#toolbar-zone
+{
+	position: relative;
+	height: 21px;
+	padding: 1px 0 0 0;
+	margin: 0 22px 0 34px;
+	min-width: 926px;
+	max-width: 940px;
+	z-index: 100;
+}
+
+div#site-id-zone
+{
+	float: left;
+	width: 320px;
+}
+
+div#generic-nav-zone
+{
+	float: left;
+	width: 274px;
+}
+
+div#search-zone
+{
+	float: right;
+	width: 322px;
+}
+
+fieldset#site-search
+{
+	float: right;
+	width: 207px;
+	margin: 2px 0 0 0;
+}
+
+input#site-search-input
+{
+	background: #fff;
+	border: 1px solid #666;
+	display: block;
+	float: left;
+	font-size: 11px;
+	margin-right: 4px;
+	padding: 0 4px;
+	width: 147px;
+}
+
+fieldset#site-search table
+{
+	width: 100%;
+}
+
+fieldset#site-search td.input
+{
+	width: 100%;
+}
+
+fieldset#site-search table a.search-button,
+fieldset#site-search table #site-search-button
+{
+	float: none;
+	margin-left: 14px;
+}
+
+fieldset#site-search table input#site-search-input
+{
+	float: none;
+	width: 100%;
+}
+
+/************************************************************************/
+/*START: configurable header height*/
+
+body.page-type-1,
+body.page-type-2,
+body.page-type-entry
+{
+	background-position: 0 0;
+}
+
+body.page-type-3
+{
+	background-position: 0 -197px;
+}
+
+body.page-type-content
+{
+	background-position: 0 -249px;
+}
+
+body.page-type-1 div#header-zone,
+body.page-type-1 div.swap-image-container,
+body.page-type-1 div#headervisual-zone,
+body.page-type-1 div#fluid-zone,
+body.page-type-2 div#header-zone,
+body.page-type-2 div.swap-image-container,
+body.page-type-2 div#headervisual-zone,
+body.page-type-2 div#fluid-zone,
+body.page-type-entry div#header-zone,
+body.page-type-entry div.swap-image-container,
+body.page-type-entry div#headervisual-zone,
+body.page-type-entry div#fluid-zone
+{
+	height: 393px;
+}
+
+body.page-type-3 div.swap-image-container,
+body.page-type-3 div#headervisual-zone,
+body.page-type-3 div#fluid-zone
+{
+	height: 196px;
+}
+
+body.page-type-3 div#header-zone {
+    height: 72px;
+}
+
+body.page-type-content div#header-zone,
+body.page-type-content div.swap-image-container,
+body.page-type-content div#headervisual-zone,
+body.page-type-content div#fluid-zone
+{
+	height: 144px;
+}
+
+/*END: configurable header height*/
+/************************************************************************/
+div#content-zone
+{
+	min-width: 960px;
+}
+
+div#breadcrumb-zone
+{
+	padding: 9px 0 16px 44px;
+}
+
+div.left-content
+{
+	float: left;
+	width: 640px;
+}
+
+div.right-content
+{
+	float: left;
+	width: 276px;
+	margin: 0 0 0 44px;
+}
+
+div.column
+{
+	float: left;
+	padding: 0 0 0 44px;
+	width: 276px;
+}
+
+div.right-content div.column
+{
+	padding: 0;
+}
+
+div.wide-column
+{
+	float: left;
+	padding: 0 0 0 44px;
+	width: 458px;
+}
+
+div.extra-wide-column
+{
+	float: left;
+	padding: 0 0 0 44px;
+	width: 596px;
+}
+
+div.full-width-content
+{
+	clear: both;
+	width: 960px;
+}
+
+body.page-type-entry div.left-content,
+body.page-type-entry div.right-content
+{
+	width: 468px;
+}
+
+body.page-type-entry div.right-content
+{
+	margin: 0 0 0 22px;
+}
+
+body.page-type-entry div.column
+{
+	width: 190px !important;
+	padding-top: 0 !important;
+}
+
+body.page-type-entry div.right-content div.column
+{
+	margin: 0 0 0 44px;
+}
+
+body.page-type-entry div.wide-column
+{
+	width: 424px;
+}
+
+div#footer-position-placeholder
+{
+	height: 44px; /* #footer-position-placeholder must be the same height as #footer-zone */
+}
+
+div#footer-zone
+{
+	min-width: 916px;
+	padding: 28px 22px 0 44px;
+	height: 16px;
+	position: relative;
+}
+/************************************************************************/
+/*START: toolbar layer*/
+div.toolbar-layer,
+div#site-id-layer,
+div#site-explorer-layer
+{
+	background: #eee;
+}
+
+div.toolbar-layer
+{
+	border: solid #fff;
+	border-width: 0 2px 2px 1px;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+}
+
+div.toolbar-layer div.close,
+div#site-id-layer div.close,
+div#site-explorer-layer div.close
+{
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	float: right;
+	padding: 1px 0 0 0;
+}
+
+div.toolbar-layer div.close a,
+div#site-id-layer div.close a,
+div#site-explorer-layer div.close a
+{
+	background: url(img/icon-tb-layer-close.gif) no-repeat;
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 0 0 0 2px;
+}
+
+div.active-layer
+{
+	display: block !important;
+}
+
+/*END: toolbar layer*/
+/************************************************************************/
+/*START: lightbox layer*/
+
+div#lightbox-curtain
+{
+	/* DEV-NOTE: width and hight are set by script*/
+	background: #666;
+	opacity: 0.90;
+	-moz-opacity: 0.90;
+	filter: alpha(opacity=90);
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 166px; /* is overwritten by script if header-zone is higher */
+	z-index: 200;
+}
+
+div.lightbox-layer
+{
+	display: none;
+	background: #fff;
+	width: 596px;
+	position: absolute;
+	left: 44px;
+	top: 116px;
+	z-index: 201;
+}
+
+div.lightbox-layer div.close
+{
+	width: 21px;
+	height: 21px;
+	background: #666;
+	float: right;
+}
+
+div.lightbox-layer div.close a
+{
+	display: block;
+	width: 19px;
+	height: 19px;
+	margin: 0 0 0 2px;
+	background: url(img/icon-lb-layer-close.gif) no-repeat;
+}
+
+/*END: lightbox layer*/
+/************************************************************************/
+/* START: alternative header styles */
+/*
+ * to use alternative color scheme for header-zone add 'alternative' class to body
+ */
+
+body.alternative
+{
+	background-image: url(img/body-alternative.gif);
+}
+
+body.alternative div#fluid-zone
+{
+	background-color: #a0b6c0;
+}
+
+/* END: alternative header styles */
+/***********************************************************************/
+/* START: logo linking */
+
+div#lightbox-layer-logo div.layer-content
+{
+	padding: 20px 14px 10px 14px;
+}
+
+div#lightbox-layer-logo h3
+{
+	font-size: 11px;
+	line-height: 16px;
+	padding: 0 0 5px 0;
+}
+
+div#lightbox-layer-logo ul.global
+{
+	padding: 0 0 9px 0;
+	background: url(img/dotted-separator-narrow.gif) bottom left repeat-x;
+	margin: 0 0 7px 0;
+}
+
+/* END: logo linking */
+/***********************************************************************/
+/* START: content-layer-2 */
+
+div.content-layer-2
+{
+	padding: 0;
+	top: 116px;
+	width: auto;
+}
+
+div.content-layer-2 div.layer-content
+{
+	padding: 20px 14px 14px;
+}
+
+.sIFR-hasFlash div.teaser div.content-layer-2 div.sifr h3,
+div.content-layer-2 h3
+{
+	font-size: 18px;
+	line-height: 22px;
+	padding: 0;
+}
+
+div.teaser div.content-layer-2 div.sifr
+{
+	padding-bottom: 15px;
+}
+
+div.teaser div.content-layer-2 div.sifr h3
+{
+	font-size: 16px;
+	line-height: 22px;
+	padding: 0;
+}
+
+div.content-layer-2 div.close
+{
+	float: none;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	width: auto;
+}
+
+div.content-layer-2 div.close a
+{
+	background: #fff url(img/icon-close.gif) no-repeat scroll right top;
+	color: #666;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	height: 18px;
+	line-height: 16px;
+	min-width: 1px;
+	padding: 0 18px 0 6px;
+	width: auto;
+}
+
+div.content-layer-2 .text-content
+{
+	max-width: 663px;
+}
+
+/* END: content layer 2 */
+/***********************************************************************/
+/*START: simple layer*/
+
+div.simple-layer
+{
+	border: solid #fff;
+	border-width: 0 2px 2px 1px;
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	background: #fff;
+}
+
+div.simple-layer div.close
+{
+	width: 21px;
+	height: 21px;
+	background: #fff;
+	background: url(img/icon-simple-layer-close.gif) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin-left: -21px;
+}
+
+div.simple-layer div.close a
+{
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 0 0 0 2px;
+}
+
+div.simple-layer div.layer-content
+{
+	border: 1px solid #ccc;
+	padding: 19px 14px 14px 14px;
+}
+
+div.simple-layer div.layer-content a,
+div.simple-layer h3,
+div.simple-layer h4,
+div.simple-layer p
+{
+	font-size: 11px;
+	line-height: 16px;
+}
+
+/*END: simple layer*/
+/************************************************************************/
+
+

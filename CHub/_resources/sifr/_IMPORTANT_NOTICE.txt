@@ -1,0 +1,16 @@
+I M P O R T A N T  N O T I C E
+- You must not use the containing "Cumminsslab.swf" on a live web site.
+- Cummins owns the print&preview licence for the "Cummins Slab" font.
+- You must make sure that the sIFR movie cannot be used from websites not operated by Cummins.
+- To do so, follow these directions:
+
+  1.) The sIFR movie must be restricted to domain names only operated by Cummins.
+  2.) Download sIFR 2.0.7 from
+      http://novemberborn.net/sifr/2.0.7/sIFR-2.0.7.zip
+  3.) Customize the file  "customize_me.as" as follows:
+      allowlocal = false;
+      allowedDomains = new Array("www.yourdomain1.com","yourdomain1.com","www.yourdomain2.com","yourdomain2.com");
+  4.) Open the "sifr.fla"
+  5.) Configuration of font and character sets:
+      Edit the dynamic text field, choose "Cummins Slab" font and pick the character sets
+  6.) Export the customized and protected sIFR movie
